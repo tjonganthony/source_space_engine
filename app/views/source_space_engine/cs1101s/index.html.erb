@@ -1,0 +1,32 @@
+<div id="game-display"></div>
+<div style="position:fixed; top:0px;">
+  <button onClick="$('#controls').toggle()">Toggle Controls</button>
+  <div id="controls">
+    <span style="color:white;">story id: </span>
+    <input id='storyIdLoad' type='text' value='spaceship'/>
+    <br />
+    <button onClick="loadStory()">load story</button>
+    <br />
+    <span style="color:white;">story id: </span>
+    <input id='storyId' type='text' value='mission-2'/>
+    <br />
+    <span style="color:white">quest id: </span>
+    <input id='questId' type='text' value='aesthetic-101-copmleted' />
+    <br />
+    <button onClick="unlockQuest()">unlock quest</button>
+    <br />
+    <span style="color:white;">story id: </span>
+    <input id='storyIdLastQuest' type='text' value='mission-2'/>
+    <br />
+    <button onClick="unlockLastQuest()">unlock last quest</button>
+    <br />
+    <button onClick="seeProgress()">See saved data (in console)</button>
+    <br />
+    <button onClick="resetProgress()">Reset Saved Progress</button>
+  </div>
+</div>
+<!-- <%= image_tag('source_space_engine/UI/wristDeviceButton.png') %> -->
+<!-- <% Dir.glob("#{SourceSpaceEngine::Engine.root}/app/assets/images/"+
+             "source_space_engine/**/*.png").each do |item| %>
+  <% image_tag(item[/source_space_engine(?!\/app)\/.*/]) %> -->
+<!-- <% end %> -->
