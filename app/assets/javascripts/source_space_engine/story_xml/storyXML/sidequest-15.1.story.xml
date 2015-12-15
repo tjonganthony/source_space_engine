@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest-15.1" type="sidequest" number="15.1" dependencies="spaceship">
+    <QUEST id="grand-laser" helpText="">
+        <EFFECTS>
+            <LOCATION name="telebay" skin="normal">
+                <OBJECT name="scottie" skin="worried" x="1267" y="283" >
+                    <SEQUENCE>
+                        <DIALOGUE>
+                            <SPEECH speaker="you">Hey, Scottie. What's wrong? You look troubled.</SPEECH>
+                            <SPEECH speaker="scottie" expression="worried">Can you believe how outdated this thing is?! I can't believe how neglectful our technicians have been!</SPEECH>
+                            <SPEECH speaker="you">Um, I'm not sure what you're talking about.</SPEECH>
+                            <SPEECH speaker="scottie" expression="worried">Oh, sorry. It's the ship's weapons systems. We haven't had to use it since I took a pot shot at passing asteroid...</SPEECH>
+                            <SPEECH speaker="you">Wait, you did what? Why?</SPEECH>
+                            <SPEECH speaker="scottie" expression="worried">It's a long story.</SPEECH>
+                            <SPEECH speaker="scottie" expression="worried">Anyway, the system has not been maintained at all and is in an appaling condition. Some of these weapons modules are a relic from the past.</SPEECH>
+                            <SPEECH speaker="scottie" expression="worried">And now wtih potential dangers looming ahead, the Grandmasters want the ship's weapons system brought up to speed, since there's a good chance we'll need to use them.</SPEECH>
+                            <SPEECH speaker="scottie" expression="worried">But there's just so much to do and only one of me!</SPEECH>
+                        </DIALOGUE>
+                        <NARRATION>Scottie paused mid-rant. He suddenly looks up at you, as though struck by an idea.</NARRATION>
+                        <DIALOGUE>
+                            <SPEECH speaker="you" mode="thought">Uh oh...</SPEECH>
+                            <SPEECH speaker="scottie" expression="happy">Say! Aren't you Cadets free right now since classes have been suspended?</SPEECH>
+                            <SPEECH speaker="you">Oh, um, we're not really -</SPEECH>
+                            <SPEECH speaker="scottie" expression="happy">Great! This is a perfect learning experience for you cadets!</SPEECH>
+                            <SPEECH speaker="scottie" expression="happy">Come on, I'll give you a run down of how it works, and then you can all help with the upgrading! The Grandmasters will be so pleased.</SPEECH>
+                            <SPEECH speaker="you">...</SPEECH>
+                        </DIALOGUE>
+                    </SEQUENCE>
+                    <COMPLETE_QUEST>grand-laser</COMPLETE_QUEST>
+                    <EXTERNAL_ACTION name="startMission">
+                        <ARGUMENT>15.1</ARGUMENT>
+                    </EXTERNAL_ACTION>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+</STORY>

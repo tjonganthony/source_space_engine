@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-3" type="mission" number="3" dependencies="spaceship">
+    <QUEST id="intro-to-ship-functions" helptext="Go to command center">
+        <EFFECTS>
+            <LOCATION name="hallway" skin="normal">
+                <SEQUENCE displayOnce="true">
+                    <DIALOGUE>
+                        <SPEECH speaker="you">Hmm, the notification I got said that the next class will be in the Command Center.</SPEECH>
+                        <SPEECH speaker="you">It should be somewhere along this corridor...</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+            </LOCATION>
+             <LOCATION name="cmdCenter" skin="normal">
+                <SEQUENCE displayOnce="true">
+                    <DIALOGUE>
+                        <SPEECH speaker="you">Ah, here it is!</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>The one leading the class this time round is a Steward, an assistant to the Master Sourcerers Hartin-Menz and Lok-Kim. He also happens to be in charge of navigation on the ship.</NARRATION>
+                    <NARRATION>Not long ago, he was a student of the Academy, just like you.</NARRATION>
+                    <NARRATION>In this class, you learn more about the Source Academy, a massive space station that also functions as a ship.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="navigator" expression="bored">So, if you all did your research, you should know that the Grandmasters chose to settle in the Kepler-62 system because the planets nearby are one of the few that possess the Source in solid form – Source Crystals, after which the Crystal Order is named.</SPEECH>
+                        <SPEECH speaker="navigator" expression="bored">The Academy conducts manned missions to the nearby planets to harvest these Crystals for research as well as search for life on them.</SPEECH>
+                        <SPEECH speaker="pixel" expression="thinking" audience="navigator">But sir, don’t we have functioning life-detection scanners?</SPEECH>
+                        <SPEECH speaker="navigator" expression="annoyed" audience="pixel">Every year, I get asked the same question...
+                        </SPEECH>
+                        <SPEECH speaker="navigator" expression="bored" audience="pixel">
+                            Yes, we do. And obviously we would have used them if that were an option, but the sheer power of these raw Source Crystals block out many of our instruments. Which is a total pain in our posterior, but there isnt' really anything we can do about it.
+                        </SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>
+                        Pixel nudges you with her elbow.
+                    </NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" expression="unimpressed">
+                            Is he always like that?
+                        </SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>You shrugged.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">I heard the cadets have a nickname for him. Navigator "Grouch".</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>The two of you start to snicker uncontrollably. The navigator shoots you a death glare.</NARRATION>
+                    <NARRATION>You immediately stop and try to pull on a straight face. Struggling with every fibre of your being to not burst out in laughter.</NARRATION>
+                    <NARRATION>
+                    After several more less interesting classes, the day ends.
+                    </NARRATION>
+                    <LOCATION name="yourRoom" skin="normal"></LOCATION>
+                    <NARRATION>
+                    You collapse on your bed, exhausted.
+                    </NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">
+                            This is all so much to take in.
+                        </SPEECH>
+                        <SPEECH speaker="you">
+                            I wonder if I’ll ever get used to life like this? All the students and Stewards here look so busy and hardworking.
+                        </SPEECH>
+                        <SPEECH speaker="you">
+                            Who knows? Maybe one day I’ll be a Steward too!
+                        </SPEECH>
+                        <SPEECH speaker="you">
+                            Maybe even a Master?
+                        </SPEECH>
+                        <SPEECH speaker="you">...</SPEECH>
+                        <SPEECH speaker="you">
+                            Guess I should go to sleep before I get too carried away.
+                        </SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>
+                        Instead of birds chirping outside your window, you wake to the sound of a blaring alarm from your academy-issued wrist device.
+                    </NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">What is that racket?</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>
+                        A message flashes across the screen: "CLASS IN 10 MINUTES."
+                    </NARRATION>
+                    <NARRATION>"Latecomers will receive detention."</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">10 minutes?! I gotta rush!</SPEECH>
+                        <SPEECH speaker="you">It’s Aesthetics 101 again, so I have to head to the same classroom as yesterday...</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <COMPLETE_QUEST>intro-to-ship-functions</COMPLETE_QUEST>
+                <UNLOCK_QUEST>aesthetics-101-again</UNLOCK_QUEST>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="aesthetics-101-again" helptext="Go to classroom">
+        <EFFECTS>
+            <LOCATION name="classroom" skin="classOn">
+                <SEQUENCE displayOnce="true">
+                    <POPUP>
+                        <IMAGE>messyClassroom-rocks.png</IMAGE>
+                        <NARRATION>The state of the classroom is significantly different from yesterday. Instead of string and cloth, the room is littered with chunks of rock, granite, even marble.</NARRATION>
+                    </POPUP>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz" expression="happy">
+                            Ah, the final member of our class is here. Let's begin today's lesson.
+                        </SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">
+                            Since yesterday went so smoothly, we can go a little faster today, I presume?
+                        </SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>
+                        Some of the students groan. You feel like joining them.
+                    </NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz">
+                            Last week you all tried your hand at using the Source to weave flat, 2D panels of cloth together.
+                        </SPEECH>
+                        <SPEECH speaker="hartin-menz">
+                            Today, we’ll learn how to manipulate much heavier material into 3D sculptures!
+                        </SPEECH>
+                        <SPEECH speaker="hartin-menz">
+                            It’s not as hard as it sounds. Most of the techniques involved, you already know from the last class.
+                        </SPEECH>
+                        <SPEECH speaker="hartin-menz">
+                            Everyone, get to your desks!
+                        </SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>You move to your assigned spot.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz" expression="happy">
+                            All right, now use the Source to pick up a chunk of material. Doesn’t matter what.
+                        </SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">
+                            We encourage creativity in this class!
+                        </SPEECH>
+                        <SPEECH speaker="you">I guess I’ll try…</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <EXTERNAL_ACTION name="startMission">
+                    <ARGUMENT>3</ARGUMENT>
+                </EXTERNAL_ACTION>
+                <OBJECT name="hartin-menz" skin="classroom" x="184" y="234"></OBJECT>
+            </LOCATION>
+            <UNLOCK_QUEST>aesthetics-101-again-completed</UNLOCK_QUEST>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="aesthetics-101-again-completed">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="classroom" skin="classOn"></LOCATION>
+            <NARRATION>Several hours later, the classroom tables are spick and span.</NARRATION>
+            <NARRATION>In front of every student stands a solid statue of their own creation, some of them exact copies of ancient Greek masterpieces, while others are more abstract, modern works.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">I finally finished!</SPEECH>
+                <SPEECH speaker="hartin-menz">Well done, class. That's all for today.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>The rest of the students split off for their next classes.</NARRATION>
+            <NARRATION>You check your timetable.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">Looks like the next class is Wave Reading 101. What does that mean? Don’t tell me we’re… surfing?</SPEECH>
+                <SPEECH speaker="you">Hmm, whatever it is, I still have some time before it starts. I guess I don't have to worry about it just yet.</SPEECH>
+            </DIALOGUE>
+        </SEQUENCE>
+        <COMPLETE_QUEST>aesthetics-101-again-completed</COMPLETE_QUEST>
+        <COMPLETE_QUEST>aesthetics-101-again</COMPLETE_QUEST>
+    </QUEST>
+</STORY>

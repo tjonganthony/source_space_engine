@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-11" type="mission" number="11" dependencies="spaceship">
+    <QUEST id="pre-mission-11">
+        <EFFECTS>
+            <LOCATION name="yourRoom" skin="normal">
+                <SEQUENCE>
+                    <NARRATION>You were struggling not to nod off while reading through 260 pages worth of information on Source Cryptography, when a gentle vibration on your wrist device alerted you to a message. It was a message from the navigator.</NARRATION>
+                    <NARRATION>"I have an update on the Planet-Y situation. Meet me at the Command Center. Now. Don't make me wait."</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">Geez, he sounds grumpy even in text. I'd better get going though. Pixel's probably there already.</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <UNLOCK_QUEST>sending-a-decoy</UNLOCK_QUEST>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="sending-a-decoy" helpText="Go to the Command Center.">
+        <EFFECTS>
+            <LOCATION name="cmdCenter" skin="normal">
+                <SEQUENCE>
+                    <NARRATION>As expected, Pixel is already there, speaking to Navigator 'Grouch'.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" expression="normal" audience="navigator">-so what's next?</SPEECH>
+                        <SPEECH speaker="navigator" expression="serious" audience="pixel">Now that the ship's comm systems have been fixed, we should arrange to send a team down to Planet Y as soon as possible.</SPEECH>
+                        <SPEECH speaker="navigator" expression="serious" audience="pixel">If it's genocide we're dealing with, it's the Crystal Order's job to stop this terrorism.</SPEECH>
+                    </DIALOGUE>
+                    <POPUP>
+                        <IMAGE>grandmastersEntrance.png</IMAGE>
+                        <NARRATION>Before he can say anything more, the Command Centre doors open, and Grandmasters Hartin and Lok-Kim walk into the room.</NARRATION>
+                    </POPUP>
+                    <DIALOGUE>
+                        <SPEECH speaker="lok-kim" expression="normal">Ah, these students are in my Wave Reading class.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="normal" audience="lok-kim">And I recognize this familiar face from my art class.</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="normal" audience="hartin-menz">We heard that you two managed to get our ships comm systems up to speed again.</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="normal" audience="hartin-menz">And judging by how quickly you managed to do it, one of you must surely be a cryptographic genius!</SPEECH>
+                        <SPEECH speaker="pixel" expression="happy" audience="lok-kim">Don't mention it!</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>Pixel seems pleased with herself.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz" expression="serious">Anyway, we have reason to believe that this entire attack is enacted by a group of rogue members of the Crystal Order.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="serious">We cannot reveal any information yet, but we are in dire need of cryptographic geniuses, such as yourselves.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="serious">The message we have received seems to have been an accidental interception on our part. We need to send a false message back to the sender, to pretend that we have carried out their nefarious orders.</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="serious">After this, we will proceed to explore the planet to find out more about this crime-to-be, and the inhabitants who are to be their targets. Can the two of you help us with this?</SPEECH>
+                        <SPEECH speaker="pixel" expression="excited" audience="lok-kim">Gladly!</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="serious" audience="pixel">We have to hurry. We don't have much time to send a convincing response.</SPEECH>
+                        <SPEECH speaker="you">Wow, so much is happening at once...</SPEECH>
+                        <SPEECH speaker="you">I'll try my best though. It feels like so much is resting on our shoulders. We musn't fail!</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <COMPLETE_QUEST>sending-a-decoy</COMPLETE_QUEST>
+                <EXTERNAL_ACTION name="startMission">
+                    <ARGUMENT>11</ARGUMENT>
+                </EXTERNAL_ACTION>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="decoy-sent">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="cmdCenter" skin="normal"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="pixel" expression="normal">Right, this should do it! I've encrypted our message using the sender's public key. With any luck, the perpetrators should be fooled into sending us information about their next move.</SPEECH>
+                <SPEECH speaker="hartin-menz" expression="happy" audience="lok-kim">Impressive! Seems like these two cadets have quite a lot of potential.</SPEECH>
+                <SPEECH speaker="lok-kim" expression="normal" audience="hartin-menz">Indeed! Now, while we wait, we must investigate this genocide attempt on planet Y. We will be sending a small team down for preliminary reconnaissance.</SPEECH>
+                <SPEECH speaker="pixel" expression="normal" audience="lok-kim">Sir, we'd like to volunteer ourselves for this task! After all, we were the ones who cracked the message!</SPEECH>
+            </DIALOGUE>
+            <NARRATION>Grandmasters Hartin Menz and Lok-Kim exchange glances. They look a little worried.</NARRATION>
+            <DIALOGUE>
+                 <SPEECH speaker="hartin-menz" expression="worried" audience="lok-kim">Well... You two Cadets have proven yourselves to be quite capable. Lok-Kim, what do you think? Should we let them test their limits?</SPEECH>
+                 <SPEECH speaker="lok-kim" expression="serious" audience="hartin-menz">Hmm, very well. However, we will be sending Steward Ershk to supervise. Since we don't yet know what forms of alien life we will encounter on planet Y, her invovlement is essential. She's an expert on extraterrestial lifeforms.</SPEECH>
+                 <SPEECH speaker="ershk" expression="excited" audience="lok-kim">Ghuvec iv tlakker vrak a dla!</SPEECH>
+                 <SPEECH speaker="hartin-menz"> So that's decided then! We're counting on you Cadets! Take some time to make your preparations before heading out. Saving the inhabitants of planet Y is an urgent and noble cause, but we want you to come back safely too.</SPEECH>
+            </DIALOGUE>
+        </SEQUENCE>
+        <COMPLETE_QUEST>pre-mission-11</COMPLETE_QUEST>
+        <COMPLETE_QUEST>decoy-sent</COMPLETE_QUEST>
+    </QUEST>
+</STORY>

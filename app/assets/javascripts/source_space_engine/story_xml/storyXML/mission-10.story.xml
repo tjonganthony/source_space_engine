@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-10" type="mission" number="10" dependencies="spaceship">
+    <QUEST id="pre-mission-10">
+        <EFFECTS>
+            <LOCATION name="hallway" skin="normal">
+                <SEQUENCE>
+                    <NARRATION>One day, after class, you and Pixel were making your way to the Great Hall for lunch.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" expression="thinking" audience="you">You know, I've been thinking about what happened the other day, the message we decrypted. I wonder if the Stewards have managed to get the shuttle-to-ship communication system fixed.</SPEECH>
+                        <SPEECH speaker="you" audience="pixel">Don't worry, they're probably working on it.</SPEECH>
+                        <SPEECH speaker="pixel" audience="you">They should proabbly get it done soon though. That message sounded utterly horrifying. Think of all the poor people on Planet-Y!</SPEECH>
+                        <SPEECH speaker="pixel" audience="you">You know what? Let's go to the Command Center right now and see.</SPEECH>
+                        <SPEECH speaker="you">Can't we at least have lunch first?</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>Pixel was already way ahead of you, making a bee-line for the Command Center. She probably didn't hear you.</NARRATION>
+                </SEQUENCE>
+                <COMPLETE_QUEST>pre-mission-10</COMPLETE_QUEST>
+                <UNLOCK_QUEST>fix-ship-communications</UNLOCK_QUEST>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="fix-ship-communications" helpText="Talk to Navigator 'Grouch'.">
+        <EFFECTS>
+            <LOCATION name="cmdCenter" skin="strangeCode">
+                <SEQUENCE>
+                    <PAUSE>
+                        <OBJECT name="navigator" skin="normal" x="396" y="541">
+                            <CONTINUE></CONTINUE>
+                        </OBJECT>
+                    </PAUSE>
+                    <DIALOGUE>
+                        <SPEECH speaker="navigator" expression="bored">Oh, it's you two again. What do you want?</SPEECH>
+                        <SPEECH speaker="pixel" expression="normal" audience="navigator">We were just wondering if you guys have managed to fix the shuttle-to-ship communications system?</SPEECH>
+                        <SPEECH speaker="navigator" expression="bored" audience="pixel">We're working on it.</SPEECH>
+                        <SPEECH speaker="pixel" expression="serious" audience="navigator">But what about the inhabitants of Planet-Y? That message we received sounded really serious.</SPEECH>
+                        <SPEECH speaker="navigator" expression="bored" audience="pixel">I know. But as I've told you before, we're short on manpower so it's taking a while.</SPEECH>
+                        <SPEECH speaker="pixel" expression="normal">Well, why don't we try our hand at it? As {player name} will tell you, I'm a cryptographic genius!</SPEECH>
+                        <SPEECH speaker="you">Uh, yeah, I guess.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>The navigator rolled his eyes and sighed.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="navigator" expression="bored">Fine. If it will make you stop bothering me, then by all means, knock yourselves out.</SPEECH>
+                        <SPEECH speaker="navigator" expression="bored">Though I don't expect much from a couple of greenhorns like yourselves.</SPEECH>
+                        <SPEECH speaker="navigator" expression="bored">In any event, I suppose Grandmasters Hartin Menz and Lok-Kim would be impressed by your initiative.</SPEECH>
+                        <SPEECH speaker="you">That's a nice bonus. Let's not waste any time then.</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <EXTERNAL_ACTION name="startMission">
+                    <ARGUMENT>10</ARGUMENT>
+                </EXTERNAL_ACTION>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>>
+    </QUEST>
+    <QUEST id="all-systems-green">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="cmdCenter" skin="normal"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="pixel" expression="happy" audience="you">It works!</SPEECH>
+                <SPEECH speaker="you" audience="pixel">Yay!</SPEECH>
+                <SPEECH speaker="navigator" expression="bored" audience="all">Don't get ahead of yourselves. Let me double check the systems first, just to be sure...</SPEECH>
+                <SPEECH speaker="navigator" expression="normal" audience="all">Well, that's a pleasant surprise. Looks like all systems are green. That's not bad for a couple of fresh Cadets.</SPEECH>
+                <SPEECH speaker="pixel" expressions="unimpressed" audience="you">Just "not bad" huh?</SPEECH>
+                <SPEECH speaker="you" audience="pixel">Well, coming from him, that's probably the highest form of praise he's capable of.</SPEECH>
+                <SPEECH speaker="you" audience="navigator">So now that our comm systems are good to go, what next?</SPEECH>
+                <SPEECH speaker="navigator" expression="bored" audience="you">Before we do anything else, I need to give the Grandmasters a status update first.</SPEECH>
+                <SPEECH speaker="navigator" expression="bored" audience="you">You should probably check back again later. You've proven yourselves capable. We could use some help from Cadets such as yourselves.</SPEECH>
+                <SPEECH speaker="pixel" expression="happy" audience="navigator">Sure thing. You can count on us!</SPEECH>
+                <SPEECH speaker="you" audience="pixel">Right, can we go have lunch now?</SPEECH>
+            </DIALOGUE>
+        </SEQUENCE>
+        <COMPLETE_QUEST>all-systems-green</COMPLETE_QUEST>
+    </QUEST>
+</STORY>

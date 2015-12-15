@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-6" type="mission" number="6" dependencies="spaceship">
+    <QUEST id="pre-mission-6">
+        <EFFECTS>
+            <LOCATION name="yourRoom" skin="normal">
+                <SEQUENCE>
+                    <NARRATION>BEEP BEEP BEEP BEEP BEEP</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">W-What was that?!</SPEECH>
+                        <SPEECH speaker="you">Oh no, I’m going to be late!</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>Luckily, the first class for the day is Wave Reading, and you find the classroom with ease.</NARRATION>
+                    <NARRATION>No more randomly searching doors this time, then.</NARRATION>
+                </SEQUENCE>
+                <COMPLETE_QUEST>pre-mission-6</COMPLETE_QUEST>
+                <UNLOCK_QUEST>gosper</UNLOCK_QUEST>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="gosper" helptext="Go to the classroom">
+        <EFFECTS>
+            <LOCATION name="classroom" skin="classOn">
+                <SEQUENCE>
+                    <DIALOGUE>
+                        <SPEECH speaker="lok-kim" expression="happy">Everyone’s here? Wonderful.</SPEECH>
+                        <SPEECH speaker="lok-kim">Before we begin, let me ask you: have you ever heard of Bill Gosper?</SPEECH>
+                        <SPEECH speaker="pixel" expression="thinking">Who now?</SPEECH>
+                        <SPEECH speaker="lok-kim">Bill Gosper was an ancient mathematician who discovered that the infinite repetition of a simple process can generate a stunning image.</SPEECH>
+                    </DIALOGUE>
+                    <POPUP>
+                        <IMAGE>gosperCurve.png</IMAGE>
+                        <NARRATION>This image is known as the Gosper curve.</NARRATION>
+                    </POPUP>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">That’s so intricate! Are we supposed to replicate that?</SPEECH>
+                        <SPEECH speaker="lok-kim">As you all have experienced, using the Source to create objects in physical space takes a toll on one’s energy.</SPEECH>
+                        <SPEECH speaker="lok-kim">If you use your powers too much by trying to draw this entire curve from scratch, you might end up burning out.</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="happy">But! This curve can be generated efficiently, once you know how.</SPEECH>
+                        <SPEECH speaker="lok-kim">I invite all of you to try. You’ll find the instructions to do so on the consoles at your desks.</SPEECH>
+                        <SPEECH speaker="lok-kim">Let’s get to work!</SPEECH>
+                        <SPEECH speaker="you">Efficiency, huh…</SPEECH>
+                        <SPEECH speaker="you">I have to keep that in mind while working.</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <EXTERNAL_ACTION name="startMission">
+                    <ARGUMENT>6</ARGUMENT>
+                </EXTERNAL_ACTION>
+                <OBJECT name="lok-kim" skin="classroom" x="184" y="235"></OBJECT>
+                <OBJECT name="classHolo" skin="gosperCurve" x="709" y="144"></OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="gosper-completed">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="classroom" skin="classOn"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="lok-kim">Wonderful effort, class!</SPEECH>
+                <SPEECH speaker="you">Turns out, making something as complicated as the Gosper curve isn’t as hard as I thought.</SPEECH>
+                <SPEECH speaker="pixel" expression="happy">Yeah, that wasn't too bad at all!</SPEECH>
+            </DIALOGUE>
+        </SEQUENCE>
+        <COMPLETE_QUEST>gosper-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>

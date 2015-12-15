@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest-3.1" type="sidequest" number="3.1" dependencies="spaceship">
+    <QUEST id="unlock-sidequest3.1" helpText="You should try the chef's special creation today!">
+        <EFFECTS>
+            <LOCATION name="greatHall" skin="normal">
+                <OBJECT name="todaysSpecial" x="324" y="865">
+                    <SEQUENCE>
+                        <NARRATION>In the middle of lunch, your wrist device beeps.</NARRATION>
+                        <NARRATION>“5 MINUTES TO GET TO CLASS: SOURCE EFFICIENCY 101”</NARRATION>
+                        <NARRATION>You nearly spit out your food.</NARRATION>
+                        <DIALOGUE>
+                            <SPEECH speaker="you">What?! Since when did I have a class like this?</SPEECH>
+                        </DIALOGUE>
+                        <NARRATION>Your wrist device beeps again. “YOUR CLASSES MAY BE RESHUFFLED DURING THE FIRST FEW WEEKS OF SCHOOL”</NARRATION>
+                        <DIALOGUE>
+                            <SPEECH speaker="you">No one told me about this!</SPEECH>
+                        </DIALOGUE>
+                        <NARRATION>You gather up your things and get moving to the specified classroom.</NARRATION>
+                    </SEQUENCE>
+                    <UNLOCK_QUEST>force-efficiency-101</UNLOCK_QUEST>
+                    <COMPLETE_QUEST>unlock-sidequest3.1</COMPLETE_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="force-efficiency-101">
+        <EFFECTS>
+            <LOCATION name="classroom" skin="classOn">
+                <SEQUENCE>
+                    <NARRATION>You walk in sheepishly, knowing you are already late.</NARRATION>
+                    <NARRATION>The other students are already seated at the tables. You pick an empty one and sit down.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="navigator" expression="bored">I see some of our students aren't as... efficient as this class expects them to be.</SPEECH>
+                        <SPEECH speaker="you">Sorry!</SPEECH>
+                        <SPEECH speaker="navigator" expression="bored">Never mind. Let's begin then, before we waste anymore time.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>A document appears on the monitor before you.</NARRATION>
+                    <NARRATION>It looks like... a multiple-choice test, with some short-answer questions.</NARRATION>
+                    <NARRATION>It’s something you’ve only heard of in history books.
+                    </NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">How retro!</SPEECH>
+                        <SPEECH speaker="navigator" expression="bored">You have the rest of this class to complete this test. Now begin!</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <COMPLETE_MISSION>force-efficiency-101</COMPLETE_MISSION>
+                <EXTERNAL_ACTION name="startMission">
+                    <ARGUMENT>3.1</ARGUMENT>
+                </EXTERNAL_ACTION>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+</STORY>

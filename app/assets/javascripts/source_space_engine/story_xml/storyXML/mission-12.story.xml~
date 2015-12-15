@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-12" type="mission" number="12" dependencies="spaceship-planet-y planet-y">
+    <QUEST id="pre-mission-12">
+        <EFFECTS>
+            <LOCATION name="yourRoom" skin="normal">
+                <SEQUENCE>
+                    <NARRATION>You were engrossed in a particularly interesting article about xenobiology when you were startled by Navigator 'Grouch's voice coming over your room's intercom.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="navigator" expression="bored">We have navigated the ship into orbit around planet Y while you Cadets were busy making your preparations.</SPEECH>
+                        <SPEECH speaker="navigator" expression="bored">Talk to Scottie down in the teleportation bay and he will get you planetside.</SPEECH>
+                        <SPEECH speaker="navigator" expression="bored">and while you're there, make sure to keep in contact with the ship so we can keep track of you.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>Almost immediately after that, Pixel pokes her head into your room.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" expression="normal">Hey, if you're all set, shall we get going?</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <COMPLETE_QUEST>pre-mission-12</COMPLETE_QUEST>
+                <UNLOCK_QUEST>go-to-planet-y</UNLOCK_QUEST>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="go-to-planet-y" helpText="Find Scottie in the Telebay">
+        <EFFECTS>
+            <LOCATION name="telebay" skin="normal">
+                <OBJECT name="scottie" skin="normal" x="1267" y="283">
+                    <SEQUENCE>
+                        <DIALOGUE>
+                            <SPEECH speaker="scottie" expression="happy">Why hello! Perfect timing! Ershk just got here a minute ago. You all ready to go?</SPEECH>
+                            <SPEECH speaker="ershk" expression="excited" audience="scottie">Rroushk, grav ikkrrou!</SPEECH>
+                            <SPEECH speaker="you" audience="scottie">Well, we're ready as can be I guess.</SPEECH>
+                            <SPEECH speaker="scottie" expression="happy">Right, then. We won’t be using the beamers this time. As you all know, we have no idea what’s on planet Y so it will hardly be safe to beam you all directly down into what could be hostile territory. So we’re gonna do things the old fashioned way!</SPEECH>
+                        </DIALOGUE>
+                        <POPUP>
+                            <IMAGE>shuttle.png</IMAGE>
+                            <NARRATION>Scottie leads the group through a small door at the side of the telebay you didn't even know existed, and into a small room with a shuttle parked within.</NARRATION>
+                        </POPUP>
+                        <DIALOGUE>
+                            <SPEECH speaker="scottie" expression="happy">Hop on!</SPEECH>
+                            <SPEECH speaker="ershk" expression="excited" audience="scottie">Chu ac iv gourory vrakhour dla! hlrub archtudkour!</SPEECH>
+                            <SPEECH speaker="scottie" expression="happy">Don’t mind her. Ershk here loves ships and all sorts of vehicles. She collects every model she can get her hands on. She even keeps a bunch of scale models of the academy ships to give to the cadets!</SPEECH>
+                            <SPEECH speaker="ershk" expression="excited" audience="scottie">Ousshk, a ub moushk moushk caburr mouvdlak un vrakhour!</SPEECH>
+                            <SPEECH speaker="scottie" expression="happy">Once we get closer to the planet, the shuttle’s short range scanners should be able to give us some idea of what we’re in for. Alright, strap in everyone!</SPEECH>
+                        </DIALOGUE>
+                    </SEQUENCE>
+                    <COMPLETE_QUEST>go-to-planet-y</COMPLETE_QUEST>
+                    <UNLOCK_QUEST>the-flight</UNLOCK_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="the-flight">
+        <EFFECT></EFFECT>
+        <SEQUENCE>
+            <LOCATION name="planet-y-orbit" skin="normal"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="scottie" expression="happy">All right, Greg, we’re approaching planet Y. Preparing for atmospheric entry.</SPEECH>
+                <SPEECH speaker="you">Who's Greg?</SPEECH>
+                <SPEECH speaker="scottie" expression="happy">Oh, he’s the ship's navigator!</SPEECH>
+                <SPEECH speaker="pixel" expression="shocked">His real name is Greg? I never knew that!</SPEECH>
+            </DIALOGUE>
+            <NARRATION>A familiar voice comes through the shuttle's speakers, sounding incredibly annoyed.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="navigator" expression="bored">That’s because you Cadets just call me Navigator “Grouch”. Don’t think I don’t know that.</SPEECH>
+                <SPEECH speaker="pixel" expression="embarrassed">Oh, um, it’s just our little joke. We don’t mean anything by it.</SPEECH>
+                <SPEECH speaker="you">But it wouldn’t hurt for you to frown less.</SPEECH>
+                <SPEECH speaker="navigator" expression="bored">Hmph.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>The conversation was broken off by a sudden loud “bang!” followed by a sharp jerk, throwing the passengers forward violently in their seats. The shuttle’s warning systems seem to go off all at once.</NARRATION>
+            <LOCATION name="planet-y-orbit" skin="crash"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="ershk" expression="horrified">kuud Graaks!</SPEECH>
+                <SPEECH speaker="scottie" expression="worried">Bits and bytes! That sounds bad! Seems like our engines overheated from penetrating planet Y’s unusually thick atmosphere.</SPEECH>
+                <SPEECH speaker="scottie" expression="worried">Or maybe the shuttle’s just too old...</SPEECH>
+                <SPEECH speaker="you">WHAT?!</SPEECH>
+                <SPEECH speaker="scottie" expression="happy">Oh, keep your knickers on. We’ll be fine! I’ve done emergency landings a hundred times!</SPEECH>
+                <SPEECH speaker="scottie" expression="happy">Ok, actually it was just that one time...</SPEECH>
+                <SPEECH speaker="you">...</SPEECH>
+                <SPEECH speaker="you">...We're doomed...</SPEECH>
+                <SPEECH speaker="scottie" expression="worried">Brace yourselves!</SPEECH>
+            </DIALOGUE>
+            <NARRATION>You bend over in your seat into a brace position, hoping against all hope that you and your comrades will survive the crash. You could feel the shuttle straining under the pressure and heat of atmospheric entry. After what felt like an eternity, the ship crash-landed on the surface on planet Y. </NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="pixel" expression="sad">[player name]! Hey! You alive?</SPEECH>
+            </DIALOGUE>
+            <NARRATION>You cautiously twitch your toes to see if you can still feel them.</NARRATION>
+            <NARRATION>You can.</NARRATION>
+            <NARRATION>Apparently, you’re not dead yet. You slowly open your eyes...</NARRATION>
+        </SEQUENCE>
+        <COMPLETE_QUEST>the-flight</COMPLETE_QUEST>
+        <UNLOCK_QUEST>emergency-communications</UNLOCK_QUEST>
+    </QUEST>
+    <QUEST id="emergency-communications" helpText="Find a way to send communication back to Academy">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="crashSite" skin="normal"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">Woah! This place...It's amazing... This forest is nothing like I've ever seen on Earth.</SPEECH>
+                <SPEECH speaker="pixel">Yeah, I've never seen anything quite like it either. The colony I was from had a dry climate so the plants there are mostly pokey.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>While you two were busy admiring the view, the two stewards were busy doing something by the downed shuttle. You and Pixel walk over to check it out.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="scottie" expression="serious">Hmm, I’m trying to send a transmission back to Navigator Greg, but it seems like our communication signals are being cut off by the planet’s unusual atmosphere.</SPEECH>
+                <SPEECH speaker="pixel" expression="serious"> Damn, looks like we fixed it for nothing.</SPEECH>
+                <SPEECH speaker="scottie" expression="serious">Not quite. I think we can still send acoustic waves. It seems like they can penetrate the atmosphere at certain frequencies. We just have to figure out a way to construct a message using acoustic waves that can be understood.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>Meanwhile, you have been rummaging through the ship wreck, hoping to find something of use.</NARRATION>
+            <PAUSE>
+                <TEMP_OBJECT id="mission-object" name="crashedShuttle" x="771" y="475">
+                    <CONTINUE></CONTINUE>
+                </TEMP_OBJECT>
+            </PAUSE>
+            <DIALOGUE>
+                <SPEECH speaker="you">Hey, I found something!</SPEECH>
+            </DIALOGUE>
+            <POPUP>
+                <IMAGE>oldbook.png</IMAGE>
+                <DIALOGUE>
+                    <SPEECH speaker="scottie" expression="happy">Oh hey! That’s the ship’s emergency communications guidebook! I forgot it was still there.</SPEECH>
+                    <SPEECH speaker="scottie" expression="happy">It’s pretty old and out-dated but we might be able to find something useful there. After all, all our conventional systems has pretty much failed us so far.</SPEECH>
+            </DIALOGUE>
+            </POPUP>
+            <POPUP>
+                <IMAGE>morseCode.png</IMAGE>
+                <DIALOGUE>
+                    <SPEECH speaker="scottie" expression="happy">Hmm, it says something about Morse code and building communications system without using radio signals...</SPEECH>
+                    <SPEECH speaker="you"> I’ve just had a thought. Maybe we can use this to contact the Academy ship using acoustic waves.</SPEECH>
+                    <SPEECH speaker="scottie" expression="happy">You know, that might just work!</SPEECH>
+                    <SPEECH speaker="pixel" expression="happy">That’s brilliant! Looks like you’re starting to pick up a thing or two from me!</SPEECH>
+                    <SPEECH speaker="ershk" skin="excited">Ousshk, gra iv idoushk kuud!</SPEECH>
+                </DIALOGUE>
+            </POPUP>
+            <EXTERNAL_ACTION name="startMission">
+                <ARGUMENT>12</ARGUMENT>
+            </EXTERNAL_ACTION>
+        </SEQUENCE>
+    </QUEST>
+    <QUEST id="emergency-communications-completed">
+        <EFFECT></EFFECT>
+        <SEQUENCE>
+            <LOCATION name="crashSite" skin="normal"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">Alright, all done! Now what?</SPEECH>
+                <SPEECH speaker="scottie" expression="happy">Now, we wait. In the meantime, we should we should investigate the alien life forms being targeted on this planet.</SPEECH>
+            </DIALOGUE>
+        </SEQUENCE>
+        <COMPLETE_QUEST>emergency-communications</COMPLETE_QUEST>
+        <COMPLETE_QUEST>emergency-communications-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>

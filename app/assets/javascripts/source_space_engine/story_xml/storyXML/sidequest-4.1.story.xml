@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest-4.1" type="sidequest" number="4.1" dependencies="spaceship">
+    <QUEST id="find-sidequest4.1">
+        <EFFECTS>
+            <LOCATION name="hallway" skin="normal">
+                <OBJECT name="mysteryNote" x="???" y="???">
+                    <SEQUENCE>
+                        <DIALOGUE>
+                            <SPEECH speaker="you">Hmm, what's this?</SPEECH>
+                        </DIALOGUE>
+                        <NARRATION>Almost mistakening it for litter, you were about to throw it away when you noticed some writing on the back of it.</NARRATION>
+                        <DIALOGUE>
+                            <SPEECH speaker="you">"Fun with the Source: Calligraphy 101 - Classroom, 1300 hrs."</SPEECH>
+                            <SPEECH speaker="you">Hmm, I never knew we had Calligraphy classes. Sounds kinda cool. Maybe I should go check it out.</SPEECH>
+                        </DIALOGUE>
+                    </SEQUENCE>
+                    <UNLOCK_QUEST>defend-yourself</UNLOCK_QUEST>
+                    <COMPLETE_QUEST>find-sidequest4.1</COMPLETE_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="defend-yourself">
+        <EFFECTS>
+            <LOCATION name="classroom" skin="classOn">
+                <SEQUENCE>
+                    <NARRATION>When you entered the classroom, you were surprised to see that almost everyone in your class is present.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="lok-kim" expression="happy">Ah, how nice of you to join us! Come, settle in! We were just about to start!</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="happy">Now, we've covered how to draw lines with the Source in our previous classes, so you all should be reasonably proficient in it by now.</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="happy">Today, we're gonna apply those same methods, to do calligraphy! Isn't that exciting?</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>Lok-Kim traces out a glowing shape in front of him.</NARRATION>
+                    <POPUP>
+                        <IMAGE>glowingJ.png</IMAGE>
+                        <NARRATION>"Do you all recognise this letter?"</NARRATION>
+                    </POPUP>
+                    <NARRATION>Unmistakably, it is the letter 'J'.</NARRATION>
+                    <NARRATION>Some of the alien students in class, however, look puzzled.</NARRATION>
+                    <NARRATION>One of them scratches his head with his fifteenth tentacle.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="lok-kim" expression="happy">Of course, the human students in this class are familiar with this glyph. It’s the letter ‘J’, in the written English alphabet.</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="happy">Not a particularly significant letter, though it does happen to be the first letter in my favourite initialism, which is “JFDI”.</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="happy">You can look up what that means later.</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="happy">Now, I encourage you to imbue the spirit of “JFDI”, and attempt to recreate this shape</SPEECH>
+                        <SPEECH speaker="you">JFDI… Just Friends, Driving Illegally?</SPEECH>
+                        <SPEECH speaker="you">Jumping From Dead Intersections?</SPEECH>
+                        <SPEECH speaker="you">I can’t think of anything…</SPEECH>
+                        <SPEECH speaker="you">Whoops, better start work before I run out of time!</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <EXTERNAL_ACTION name="startMission">
+                    <ARGUMENT>4.1</ARGUMENT>
+                </EXTERNAL_ACTION>
+                <OBJECT name="lok-kim" skin="classroom" x="184" y="234"></OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="completed">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE></SEQUENCE>
+        <COMPLETE_QUEST>completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>

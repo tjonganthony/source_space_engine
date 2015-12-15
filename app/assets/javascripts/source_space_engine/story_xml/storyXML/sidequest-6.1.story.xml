@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest6.1" type="sidequest" number="6.1" dependencies="spaceship">
+    <QUEST id="find-sidequest6.1" helpText="">
+        <EFFECTS>
+            <LOCATION name="LKoffice" skin="normal">
+                <OBJECT name="origamiSnowFlake" x="???" y="???">
+                    <UNLOCK_MISSION>kochize</UNLOCK_MISSION>
+                    <COMPLETE_QUEST>find-sidequest6.1</COMPLETE_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="kochize">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="classroom" skin="classOn"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="lok-kim" expression="normal">Now tell me class, has any of you ever seen snow? It’s a common weather phenomenon in terrestrial planets.</SPEECH>
+                <SPEECH speaker="pixel" expression="excited">Oh, I have! But only in pictures or videos.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>Several human students raise their hands, but many of the aliens do not.</NARRATION>
+            <NARRATION>Apparently, some of their home planets are gas giants, while others are able to withstand high amounts of heat, and have never heard of weather variation in their lives.</NARRATION>
+            <POPUP>
+                <IMAGE>intricateLineDrawing.png</IMAGE>
+                <NARRATION>Lok-Kim waves his hands, conjuring up an intricate line drawing.</NARRATION>
+            </POPUP>
+            UENCE>
+            <DIALOGUE>
+                <SPEECH speaker="lok-kim" expression="normal">Well, a unit of snow – a snowflake – is what we’re going to be learning to create today.Efficiently, of course.</SPEECH>
+                <SPEECH speaker="lok-kim" expression="normal">The Koch snowflake is a fractal, named so because it looks exactly like a snowflake.</SPEECH>
+                <SPEECH speaker="lok-kim" expression="normal">It seems very complicated at a glance, but look closer.</SPEECH>
+                <SPEECH speaker="lok-kim" expression="normal">It’s made out of the same piece, just in different sizes and positions.</SPEECH>
+                <SPEECH speaker="lok-kim" expression="normal">In fact, it only takes me several waves of my hand to create another one, exactly like it.
+                </SPEECH>
+            </DIALOGUE>
+            <NARRATION>He waves his hands as he speaks, and an identical snowflake appears beside the first one.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="lok-kim" expression="normal">So, this can be done very efficiently.</SPEECH>
+                <SPEECH speaker="lok-kim" expression="normal">Now it’s your turn to do the same.</SPEECH>
+                <SPEECH speaker="pixel" expression="unimpressed">It’s too complicated to do it that quickly! He must be cheating somehow...</SPEECH>
+                <SPEECH speaker="you">I don't think so Pixel...</SPEECH>
+                <SPEECH speaker="pixel" expression="serious">It's suspicious!</SPEECH>
+                <SPEECH speaker="you">Anyway, we should give it a try regardless.</SPEECH>
+            </DIALOGUE>
+            <COMPLETE_MISSION>kochize</COMPLETE_MISSION>
+            <EXTERNAL_ACTION name="startMission">
+                <ARGUMENT>6.1</ARGUMENT>
+            </EXTERNAL_ACTION>
+        </SEQUENCE>
+    </QUEST>
+</STORY>

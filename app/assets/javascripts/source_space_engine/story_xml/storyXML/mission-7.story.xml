@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-7" type="mission" number="7" dependencies="spaceship">
+    <QUEST id="dragon">
+        <EFFECTS>
+            <LOCATION name="classroom" skin="classOn">
+                <SEQUENCE displayOnce="true">
+                    <NARRATION>You arrive slightly early in class for once. Most of the students have already arrive, except for a few. You picked an empty seat next to your friend Pixel.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="lok-kim" expression="happy">All right, Cadets! Since almost everyone is here, let's start!</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="normal">I hope you all remember what we learned last lesson about the Gosper Curve.</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="normal">Today, we are going to take it a step further.</SPEECH>
+                        <SPEECH speaker="lok-kim">This is something similar to the Gosper curve – let’s call it the Dragon curve.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>The class goes into a buzz. It seems like some aliens and non-Earthborn humans have no idea what a dragon is.</NARRATION>
+                    <NARRATION>Lok-Kim surveys the class and goes into a discussion.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="lok-kim">I see that some of you – especially the non-humans in this class – might be unfamiliar with this creature of human folklore.</SPEECH>
+                    </DIALOGUE>
+                    <POPUP>
+                        <IMAGE>dragonCurve.png</IMAGE>
+                        <NARRATION>This is what one looks like, next to a picture of the curve.</NARRATION>
+                    </POPUP>
+                    <DIALOGUE>
+                        <SPEECH speaker="lok-kim">See the resemblance?</SPEECH>
+                        <SPEECH speaker="pixel" expression="unimpressed" audience="lok-kim">Eh, not really…</SPEECH>
+                        <SPEECH speaker="lok-kim">The next assignment for today is to replicate this curve.</SPEECH>
+                        <SPEECH speaker="lok-kim">This should be a piece of cake, after the Gosper curve.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>Some of the aliens in the class seem not to have heard of cake either, and turn to their human friends curiously.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" audience="you">Man... I’m already drained from all that work from the previous class.</SPEECH>
+                        <SPEECH speaker="pixel" audience="you">We need to remember to be more efficient in our Source usage.</SPEECH>
+                        <SPEECH speaker="pixel" audience="you">Else I might just collapse.</SPEECH>
+                        <SPEECH speaker="you" audience="pixel">Let’s try to finish this quickly, then.</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <EXTERNAL_ACTION name="startMission">
+                    <ARGUMENT>7</ARGUMENT>
+                </EXTERNAL_ACTION>
+                <OBJECT name="lok-kim" skin="classroom" x="184" y="235"></OBJECT>
+                <OBJECT name="classHolo" skin="dragonCurve" x="???" y="???"></OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="dragon-completed">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="classroom" skin="classOn"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">Finally! It looks just like the one Grandmaster Lok-Kim has!</SPEECH>
+            </DIALOGUE>
+            <NARRATION>You proudly compare your creation with Lok-Kim’s model. Good job!</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="pixel">It took much longer than expected, though. I’m so sleepy!</SPEECH>
+                <SPEECH speaker="lok-kim" expression="happy">Very well done, class! All of you finished earlier than expected.</SPEECH>
+                <SPEECH speaker="lok-kim" expression="happy">I believe I can dismiss you early today, for this stellar performance. Now you can all beat the lunch crowd!
+                </SPEECH>
+            </DIALOGUE>
+            <NARRATION>The class lets out a cheer and starts to stream out of the room.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="pixel" expression="excited">Yes! Come on, let's go to the Great Hall. I'm so hungry I could eat a cow!</SPEECH>
+                <SPEECH speaker="you">Me too! Using the Source always makes me hungry after. Let's go!</SPEECH>
+            </DIALOGUE>
+        </SEQUENCE>
+        <COMPLETE_QUEST>dragon</COMPLETE_QUEST>
+        <COMPLETE_QUEST>dragon-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>

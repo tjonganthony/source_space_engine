@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-1" type="mission" number="1" dependencies="spaceship">
+    <QUEST id="tutorial">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="yourRoom" skin="normal"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">Wow, this place looks great!</SPEECH>
+            </DIALOGUE>
+            <NARRATION>
+                The room you have is much bigger that what you thought it would be.
+            </NARRATION>
+            <NARRATION>
+               There’s even a window in the back, from which you can see the vast expanse of space outside.
+            </NARRATION>
+            <NARRATION>
+                It’s still amazing, that such a humongous structure like this is freely floating in the galaxy.
+            </NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">
+                    It’s so different from being back on Earth…
+                </SPEECH>
+                <SPEECH speaker="you">
+                    Studying here’s going to be really difficult. I’ll have to work really hard to do well.
+                </SPEECH>
+                <SPEECH speaker="you">
+                    But I’m so excited for it to begin!
+                </SPEECH>
+            </DIALOGUE>
+            <DIALOGUE>
+                <SPEECH speaker="you">
+                    Hey, what’s this on my desk?
+                </SPEECH>
+                <SPEECH speaker="you">
+                    There’s something displayed on the screen.
+                </SPEECH>
+            </DIALOGUE>
+            <NARRATION>
+                This is your academy-issued tablet. Please unlock it to continue.
+            </NARRATION>
+            <PAUSE>
+                <OBJECT name="yourTablet" skin="normal" x="1446" y="475">
+                    <CONTINUE></CONTINUE>
+                </OBJECT>
+            </PAUSE>
+        </SEQUENCE>
+        <COMPLETE_QUEST>tutorial</COMPLETE_QUEST>
+        <EXTERNAL_ACTION name="startMission">
+            <ARGUMENT>1</ARGUMENT>
+        </EXTERNAL_ACTION>
+    </QUEST>
+    <QUEST id="completed">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE></SEQUENCE>
+        <COMPLETE_QUEST>completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>

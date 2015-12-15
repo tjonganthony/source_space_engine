@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-14" type="mission" number="14" dependencies="planet-y">
+    <QUEST id="striped-bushes" helpText="Inspect the bushes">
+        <EFFECTS>
+            <LOCATION name="crashSite" skin="normal">
+                <SEQUENCE>
+                    <NARRATION>The four of you crowd around the receiver of the dial phone, trying to make sense of the incoming transmission. Amidst the crackling of static, you make out a faint alien voice.</NARRATION> 
+                    <DIALOGUE>
+                        <SPEECH speaker="you">Is it just me, or does it sound like music?</SPEECH>
+                        <SPEECH speaker="ershk" expression="thinking">Hrmm, ou iv vishouk hdla.</SPEECH>
+                        <SPEECH speaker="scottie" expression="happy" audience="ershk">Ershk says she thinks you may be right.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>Pixel fiddles with the controls of the receiver, trying to clear up the static.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" expression="serious">It’s no use though. We can’t decipher what they’re trying to say if we can’t hear the message clearly.</SPEECH>
+                        <SPEECH speaker="you" audience="pixel">So...What now?</SPEECH>
+                        <SPEECH speaker="pixel" expression="serious" audience="you">Give me a minute, I'll try to figure something out.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>Seems like there’s nothing much you can do here at the moment. Maybe taking a walk in the alien forest will help you think.</NARRATION>
+                </SEQUENCE>
+            </LOCATION>
+            <LOCATION name="alienForest" skin="normal">
+                <SEQUENCE>
+                    <PAUSE duration="2" autocontinue="true"></PAUSE>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">O-kay… I was pretty sure those striped bushes weren’t here before. I hope I’m not seeing things, I’ve been thinking there was something funny about the air around here...</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <OBJECT name="stripedBush" skin="04" x="1273" y="561"></OBJECT>
+                <OBJECT name="stripedBush" skin="05" x="697" y="706"></OBJECT>
+                <OBJECT name="stripedBush" skin="02" x="1655" y="756">
+                    <SEQUENCE>
+                        <NARRATION>You gently nudge the furry striped bush-looking thing. You thought you heard a muffled “mmph” sound. But it didn’t move or respond. Maybe you’re starting to hear things too.</NARRATION>
+                    </SEQUENCE>
+                </OBJECT>
+                <OBJECT name="stripedBush" skin="03" x="486" y="651">
+                    <SEQUENCE>
+                        <NARRATION>Mmm, these bushes are pretty soft. You couldn’t help but stroke them. Nothing happened.</NARRATION>
+                    </SEQUENCE>
+                </OBJECT>
+                <OBJECT name="stripedBush" skin="01" x="41" y="918">
+                    <SEQUENCE>
+                        <NARRATION>Now that you come to think about it, these bushes feel almost too solid to be bushes. You prod this one harder, just to see if there’s any response.</NARRATION>
+                        <DIALOGUE>
+                            <SPEECH speaker="chieftain" expression="angry">@%#*^@ $*#%@#!!!</SPEECH>
+                            <SPEECH speaker="you">Um...</SPEECH>
+                            <SPEECH speaker="chieftain" expression="angry">*#***%!!!</SPEECH>
+                        </DIALOGUE>
+                        <NARRATION>Whatever it is saying, or rather singing, it is evidently angry with you. Maybe you prod it a little too hard.</NARRATION>
+                        <DIALOGUE>
+                            <SPEECH speaker="you">Okay, okay, I’m sorry!</SPEECH>
+                        </DIALOGUE>
+                        <NARRATION>Your friends rush over to see what the commotion is about. Ershk tries to say something to soothe the angry striped bush.</NARRATION>
+                        <DIALOGUE>
+                            <SPEECH speaker="ershk" expression="excited" audeince="chieftain">$# %@$^ *%#?</SPEECH>
+                            <SPEECH speaker="chieftain" expression="angry" audience="ershk">*#@ *$%!!!</SPEECH>
+                            <SPEECH speaker="pixel" expression="serious">I think that made it angrier.</SPEECH>
+                            <SPEECH speaker="scottie" expression="worried" audience="pixel">Maybe she accidentally sang something vulgar.</SPEECH>
+                            <SPEECH speaker="you">We better figure out how to communicate with them quick. It looks really pissed.</SPEECH>
+                            <SPEECH speaker="scottie" expression="worried">Anyone here knows anything about music?</SPEECH>
+                            <SPEECH speaker="pixel" expression="thinking" audience="scottie">Well as a matter of fact...</SPEECH>
+                            <SPEECH speaker="you" audience="pixel"> Let me guess, you’re something of a musical genius too?</SPEECH>
+                            <SPEECH speaker="pixel" expression="excited" audience="you">Why yes! I’ve been playing Mozart since I was 3!</SPEECH>
+                            <SPEECH speaker="pixel" expression="excited" audience="you">I can teach you all the basic theory, it’s not that hard. Then we can try to figure out a way to interpret this language together!</SPEECH>
+                        </DIALOGUE>
+                    </SEQUENCE>
+                    <COMPLETE_QUEST>striped-bushes</COMPLETE_QUEST>
+                    <EXTERNAL_ACTION name="startMission">
+                        <ARGUMENT>14</ARGUMENT>
+                    </EXTERNAL_ACTION>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="striped-bushes-completed">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <DIALOGUE>
+               <SPEECH speaker="chieftain" expression="angry">That took you guys long enough!</SPEECH>
+               <SPEECH speaker="you" audience="chieftain">Oh hey! I can understand it now!</SPEECH>
+               <SPEECH speaker="chieftain" expression="angry" audience="you">My people and I heard your transmission. We weren’t sure what we’re dealing with so we camouflaged into the forest to observe you before we decided what to do. That is, until you decided to poke me with your grubby little fingers.</SPEECH>
+               <SPEECH speaker="chieftain" expression="angry" audience="you">It still hurts by the way!</SPEECH>
+               <SPEECH speaker="you">For the tenth time! I’m really really sorry about that. I thought you were a bush!</SPEECH>
+               <SPEECH speaker="pixel" expression="normal" audience="chieftain">So you got our message then?</SPEECH>
+               <SPEECH speaker="chieftain" expression="normal" audience="pixel">Yeah but we didn’t quite understand it.</SPEECH>
+               <SPEECH speaker="pixel" expression="serious" audience="chieftain">We were trying to warn you about an imminent attack on this planet and your species! I don’t know if you are aware of this, but your planet has a large concentration of Source crystals. We intercepted a transmission from an enemy ship who wants to commit genocide and mine all your Source Crystals!</SPEECH>
+               <SPEECH speaker="chieftain" expression="perplexed" audience="pixel">That sounds horrible! But we don’t even know what Source crystals are.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>Pixel points at the glowing crystal on his staff.</NARRATION>
+            <DIALOGUE>
+               <SPEECH speaker="chieftain" expression="perplexed" audience="pixel">That? Why would someone commit genocide just to steal a little staff ornament? We’d gladly give it to them if they’d leave us in peace.</SPEECH>
+               <SPEECH speaker="pixel" expression="serious" audience="chieftain">They aren’t suppose to be staff ornaments. These crystals contain a mysterious but potent power called the Source, in its purest form. In the wrong hands, it can be very, very dangerous.</SPEECH>
+               <SPEECH speaker="chieftain" expression="serious" audience="pixel">I see. So what do you propose? If such a threat is true, as the Chieftain of this clan, I have the responsibility to protect my people.</SPEECH>
+               <SPEECH speaker="scottie" expression="sad" audience="chieftain">Our shuttle crashed on the way here, but we’re sending a transmission back to our mothership. They should be sending help down soon. The Crystal Order will do everything in its power to protect your clan.</SPEECH>
+               <SPEECH speaker="scottie" expression="worried" audience="chieftain">In the meantime, let’s hope they get here before our enemies. I may be proficient in Source Defence, but even I am no match for a whole fleet of hostiles.</SPEECH>
+            </DIALOGUE>
+        </SEQUENCE>
+        <COMPLETE_QUEST>striped-bushes-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>
+           

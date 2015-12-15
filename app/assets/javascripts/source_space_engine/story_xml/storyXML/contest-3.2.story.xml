@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="contest-3.2" type="contest" number="3.2" dependencies="spaceship">
+    <QUEST id="find-contest-3.2" helpText="Don't you think Grandmaster Hartin Menz's office needs a bit of sprucing up?">
+        <EFFECTS>
+            <LOCATION name="HMoffice" skin="normal">
+                <OBJECT name="runicCarpet" skin="normal" x="440" y="751">
+                    <COMPLETE_QUEST>find-contest-3.2</COMPLETE_QUEST>
+                    <UNLOCK_QUEST>runic-carpet-contest</UNLOCK_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="runic-carpet-contest">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="classroom" skin="classOn"></LOCATION>
+            <NARRATION>One day, during Aesthetic Uses of Source 101...</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="hartin-menz" expression="happy">Now that you all are proficient in weaving carpets, let’s change things up a bit, shall we?</SPEECH>
+            </DIALOGUE>
+            <NARRATION>The class looks up from their work, stunned.</NARRATION>
+            <NARRATION>Some immediately look desperate to leave.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="hartin-menz" expression="happy">No, it’s nothing too difficult, I assure you.</SPEECH>
+                <SPEECH speaker="hartin-menz" expression="happy">Let’s have a contest! A little competition never hurt anybody.
+                I’ll have you all design a carpet for my office.</SPEECH>
+                <SPEECH speaker="hartin-menz" expression="happy">I don’t have much of an eye for interior design, so you people will have to do.</SPEECH>
+                <SPEECH speaker="hartin-menz" expression="happy">Whoever makes the best carpet will have the highest honour of having it displayed right there in the middle of my office, for everyone to see!</SPEECH>
+                <SPEECH speaker="you">Is that really that great a prize...?</SPEECH>
+            </DIALOGUE>
+            <NARRATION>The class begins to murmur excitedly. Apparently, it is.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="hartin-menz" expression="happy">Now, if everybody's clear, let's begin!</SPEECH>
+            </DIALOGUE>
+            <OBJECT name="hartin-menz" x="184" y="234"></OBJECT>
+            <OBJECT name="holoRunicCarpet" x="709" y="144"></OBJECT>
+        </SEQUENCE>
+        <COMPLETE_MISSION>runic-carpet-contest</COMPLETE_MISSION>
+        <EXTERNAL_ACTION name="startMission">
+            <ARGUMENT>3.2</ARGUMENT>
+        </EXTERNAL_ACTION>
+    </QUEST>
+</STORY>

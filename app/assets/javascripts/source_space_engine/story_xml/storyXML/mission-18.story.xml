@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-18" type="mission" number="18" dependencies="spaceship">
+    <QUEST id="advance-training" helpText="Continue your training in the classroom.">
+        <EFFECTS>
+            <LOCATION name="classroom" skin="classOn">
+                <SEQUENCE>
+                    <DIALOGUE>
+                        <SPEECH speaker="scottie" expression="happy">Great! Looks like we're all here.</SPEECH>
+                        <SPEECH speaker="scottie" expression="happy">Now, while you cadets were taking a break, I've been talking to the Crystal Order's engineers who built the Death Cube.</SPEECH>
+                        <SPEECH speaker="scottie" expression="happy">It seems that the service bots on the Death Cube are going to present a bit of a headache.</SPEECH>
+                        <SPEECH speaker="pixel" expression="thinking" audience="scottie">But aren't service bots harmless? They just maintain and repair the ship.</SPEECH>
+                        <SPEECH speaker="scottie" expression="worried" audience="pixel">Normally, that would be the case.</SPEECH>
+                        <SPEECH speaker="scottie" expression="worried" audience="pixel">However, in cases of high alert, like during space combat, the service bots will patrol the ship, and alert the security drones to any intrusions.</SPEECH>
+                        <SPEECH speaker="scottie" expression="worried" audience="pixel">Which complicates matters, since there are so many of them it's almost impossible to avoid them altogether.</SPEECH>
+                        <SPEECH speaker="scottie" expression="serious" audience="pixel">So, once on the Death Cube, you'll need to work together and systematically eliminate the service bots and security drones, before you make your way to the generator room.</SPEECH>
+                        <SPEECH speaker="scottie" expression="serious" audience="pixel">Which you will practice now using the simulator. So, let's get cracking!</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <OBJECT name="scottie" skin="classroom" x="184" y="231"></OBJECT>
+                <EXTERNAL_ACTION name="startMission">
+                    <ARGUMENT>18</ARGUMENT>
+                </EXTERNAL_ACTION>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="advance-training-completed">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="classroom" skin="classOn"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">Phew! That was intense...</SPEECH>
+                <SPEECH speaker="pixel" audience="you">Yeah, I'm so hungry now but we did it!</SPEECH>
+                <SPEECH speaker="scottie" expression="happy">Not bad! Looks like we've got a real shot at defeating the rogue Grandmaster.</SPEECH>
+                <SPEECH speaker="scottie" expression="happy">Now, you should all go back and get some well earned rest.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>You couldn't agree more with Scottie.</NARRATION>
+            <NARRATION>You follow your equally tired classmates as they all shuffle out of the classroom, eager to get back to their rooms to rest up before the looming battle.</NARRATION>
+        </SEQUENCE>
+        <COMPLETE_QUEST>advance-training</COMPLETE_QUEST>
+        <COMPLETE_QUEST>advance-training-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>
+           

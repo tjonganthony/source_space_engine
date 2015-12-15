@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest-2.1" type="sidequest" number="2.1" dependencies="spaceship">
+    <QUEST id="find-sidequest2.1">
+        <EFFECTS>
+            <LOCATION name="yourRoom" skin="normal">
+                <OBJECT name="doorMat" skin="persian" x="???" y="???">
+                    <COMPLETE_QUEST>find-sidequest2.1</COMPLETE_QUEST>
+                    <UNLOCK_QUEST>runic-carpet-contest</UNLOCK_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="persianCarpet">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="classroom" skin="classOn"></LOCATION>
+            <NARRATION>One day, during Aesthetic Uses of Source 101...</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="hartin-menz" expression="happy">Now, before we end off, I'd like to announce an exciting challenge!</SPEECH>
+                <SPEECH speaker="hartin-menz" expression="happy">The Academy is having a Persian theme week! As such, we'd like to encourage you to decorate your room in a Persian theme! Each of your rooms come with an Academy issued source sensitive door mat. You are to use the Source to weave a Persian carpet for your rooms.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>The class exchanged looks of confusion.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="you" mode="thought">Is he being serious? I mean, are we really having a Persian theme week??</SPEECH>
+            </DIALOGUE>
+            <OBJECT name="hartin-menz" x="184" y="234"></OBJECT>
+            <OBJECT name="holoRunicCarpet" x="709" y="144"></OBJECT>
+        </SEQUENCE>
+        <COMPLETE_MISSION>persianCarpet</COMPLETE_MISSION>
+        <EXTERNAL_ACTION name="startMission">
+            <ARGUMENT>2.1</ARGUMENT>
+        </EXTERNAL_ACTION>
+    </QUEST>
+</STORY>

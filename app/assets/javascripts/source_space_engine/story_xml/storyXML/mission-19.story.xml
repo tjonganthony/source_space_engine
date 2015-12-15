@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-19" type="mission" number="19" dependencies="spaceship-emergency" "deathCube">
+    <QUEST id="preparation-for-final-showdown" helpText="Report to the Command Center">
+        <EFFECTS>
+            <LOCATION name="telebay" skin="emergency">
+                <SEQUENCE>
+                    <NARRATION>Most of your fellow cadets were already here, geared up and ready to go. The Grandmasters arrived soon after.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz" expression="serious">Well, Cadets! You've done exceptionally well in your training so far. Are you ready to put your skills to the test?</SPEECH>
+                        <SPEECH speaker="you">Ready or not, I guess we just have to do it.</SPEECH>
+                        <SPEECH speaker="pixel" expression="serious">We'll get it done. You can count on us Grandmasters.</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="serious">Well then, you've all been briefed by Scottie. I trust you know what to do. Go with the Source, Cadets!</SPEECH>
+                        <SPEECH speaker="scottie" expression="serious">Before you all go though, I have a little parting gift.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>He starts handing out small, round glowing orbs.</NARRATION>
+                    <POPUP>
+                        <IMAGE>glowingOrb.png</IMAGE>
+                        <NARRATION>You can feel it pulsating with energy in your hands.</NARRATION>
+                    </POPUP>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">What's this?</SPEECH>
+                        <SPEECH speaker="scottie" expression="happy">These are Source bombs. They are incredibly powerful. You'll need them in order to destroy the generator.</SPEECH>
+                        <SPEECH speaker="scottie" expression="serious">So, you kids ready?</SPEECH>
+                        <SPEECH speaker="you">Yep. Beam us over, Scottie!</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <UNLOCK_QUEST>death-cube</UNLOCK_QUEST>
+                <COMPLETE_QUEST>preparation-for-final-showdown</COMPLETE_QUEST>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="final-showdown">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="deathCube_int" skin="normal"></LOCATION> 
+            <DIALOGUE>
+                <SPEECH speaker="pixel" expression="confused">What...? This place...</SPEECH>
+                <SPEECH speaker="you">This is so disorienting...</SPEECH>
+                <SPEECH speaker="you">How are we even suppose to find the generator in this maze?!</SPEECH>
+            </DIALOGUE> 
+            <NARRATION>Around you, the other cadets are looking similarly disoriented.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="pixel" expression="serious">Ok, calm down and focus. We just have to remember what we did during training, and we'll be fine.</SPEECH>
+                <SPEECH speaker="you">Right, ok. Where do we even begin?</SPEECH>
+                <SPEECH speaker="pixel" expression="thinking">Let's pick a spot and start from there. How about here?</SPEECH>
+            </DIALOGUE>
+            <OBJECT name="door01" skin="normal" x="???" y="???">
+                <SEQUENCE>
+                    <NARRATION>Nothing happened.</NARRATION>
+                </SEQUENCE>
+            </OBJECT>
+            <OBJECT name="door02" skin="normal" x="???" y="???">
+                <SEQUENCE>
+                    <NARRATION>This door is exactly like the other ??? doors in this room.</NARRATION>
+                </SEQUENCE>
+            </OBJECT> 
+            <OBJECT name="door03" skin="normal" x="???" y="???">
+                <SEQUENCE>
+                    <NARRATION>You take a moment to admire how shiny and spotless this door is. Some poor bot must spend its whole day wiping down the insides of this ship.</NARRATION>
+                </SEQUENCE>
+            </OBJECT> 
+            <OBJECT name="door04" skin="normal" x="???" y="???">
+                <SEQUENCE>
+                    <NARRATION>This is not the door you are looking for.</NARRATION>
+                </SEQUENCE>
+            </OBJECT> 
+            <OBJECT name="door05" skin="normal" x="???" y="???">
+                <SEQUENCE>
+                    <NARRATION>Nope.</NARRATION>
+                </SEQUENCE>
+            </OBJECT> 
+            <OBJECT name="door06" skin="normal" x="???" y="???">
+                <SEQUENCE>
+                    <NARRATION>Nothing happened. Frustrated, you kick the door with all the strength you could muster.</NARRATION>
+                    <NARRATION>The light in the center of the door went out.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" expression="normal">I have a bad feeling about this.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>There was a few seconds of complete silence as everyone held their breath, waiting for the hammer to fall.</NARRATION>
+                    <NARRATION>Nothing continued to happen.</NARRATION>
+                    <NARRATION>You hobbled off on your now throbbing foot to try the rest of the doors.</NARRATION>
+                </SEQUENCE>
+            </OBJECT> 
+            <OBJECT name="door07" skin="normal" x="???" y="???">
+                <SEQUENCE>
+                    <NARRATION>Nothing happened.</NARRATION>
+                </SEQUENCE>
+            </OBJECT> 
+            <OBJECT name="door08" skin="normal" x="???" y="???">
+                <SEQUENCE>
+                    <NARRATION>To your horror, a synthetic voice, presumably belonging to the door, starts singing.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="red-eye">Daisy, Daisy, give me your answer do~</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>You hurriedly move on to the next door to avoid its terrible singing.</NARRATION>
+                </SEQUENCE>
+            </OBJECT>  
+            <OBJECT name="door09" skin="normal" x="???" y="???">
+                <SEQUENCE>
+                    <NARRATION>Nothing happened.</NARRATION>
+                </SEQUENCE>
+            </OBJECT>
+            <OBJECT name="door10" skin="normal" x="???" y="???">
+                <SEQUENCE>
+                    <NARRATION>You nearly jump out of your skin when a synthetic voice speaks to you.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="red-eye">State your business.</SPEECH>
+                        <SPEECH speaker="you">Um... We're looking for the generator room. Can you please open the door?</SPEECH>
+                        <SPEECH speaker="red-eye">I'm sorry. I'm afraid I can't do that.</SPEECH>
+                        <SPEECH speaker="you">Why not?</SPEECH>
+                        <SPEECH speaker="red-eye">You need a password.</SPEECH>
+                        <SPEECH spealer="red-eye">Please note that presenting the wrong password will result in permanent incapacitation.</SPEECH>
+                        <SPEECH speaker="you">Um... Open sesame?</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>The door slides open smoothly, revealing the generator room inside. Everyone heaved a sigh of relief.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel">Wow, I can't believe that worked. I was absolutely certain we were gonna die back there.</SPEECH>
+                        <SPEECH speaker="you">Yeah, I know right.</SPEECH>
+                        <SPEECH speaker="you">Come on, let's plant the bomb and get out of here. This place is gonna make me puke.</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <EXTERNAL_ACTION name="startMission">
+                    <ARGUMENT>19</ARGUMENT>
+                </EXTERNAL_ACTION>
+                <COMPLETE_QUEST>final-showdown</COMPLETE_QUEST>
+                <UNLOCK_QUEST>final-showdown-completed</UNLOCK_QUEST>
+            </OBJECT>           
+        </SEQUENCE>
+    </QUEST>
+    <QUEST id="final-showdown-completed">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="deathCube_int" skin="normal"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="pixel">Right, that should do it.</SPEECH>
+                <SPEECH speaker="you">Let's signal Scottie to beam us out of here, then we can trigger the explosion.</SPEECH>
+            </DIALOGUE>
+            <LOCATION name="deathCube_ext" skin="gen-explode"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">Look's like that did it!</SPEECH>
+                <SPEECH speaker="pixel" expression="happy">Now that the shields are down, the Order's fleet can blast it into oblivion!</SPEECH>
+            </DIALOGUE>
+            <NARRATION>The massive Death Cube began to wither under the constant barrage of attacks from the Crystal Order's fleet.</NARRATION>
+            <POPUP>
+                <IMAGE>deathCubeExplode.png</IMAGE>
+                <NARRATION>The indestructible Death Cube was no match for the might of the Crystal Order's fleet!</NARRATION>
+            </POPUP>
+             <DIALOGUE>
+                <SPEECH speaker="you">Yes, we did it! We destroyed the Death Cube!</SPEECH>
+            </DIALOGUE>
+            <LOCATION name="telebay" skin="normal"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="scottie" expression="happy">Well done, kids! You guys really saved the day! I knew we could count on you!</SPEECH>
+                <SPEECH speaker="lok-kim" expression="happy">Yes, that was brilliantly done, Cadets! We couldn't have succeeded without you!</SPEECH>
+                <SPEECH speaker="hartin-menz" expression="happy">Indeed! You shall all receive a medal of the highest honour for your contributions.</SPEECH>
+                <SPEECH speaker="hartin-menz" expression="happy">Now, you should get some well deserved rest.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>You head out of the Telebay with your fellow Cadets, tired but in high spirits.</NARRATION>
+            <NARRATION>On the way out, you noticed Grandmasters Hartin-Menz and Lok-Kim discussing something in low voices, with troubled looks on their faces.</NARRATION>
+            <NARRATION>You pushed the thought out of your mind for now, sleepiness taking over.</NARRATION>
+        </SEQUENCE>
+        <COMPLETE_QUEST>final-showdown-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>
+           

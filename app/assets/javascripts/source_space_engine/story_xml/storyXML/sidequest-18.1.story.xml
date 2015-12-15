@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest-18.1" type="sidequest" number="18.1" dependencies="spaceship">
+    <QUEST id="find-sidequest-18.1">
+        <EFFECTS>
+            <LOCATION name="classroom" skin="normal">
+                <OBJECT name="trainingRoomConsole" skin="normal" x="???" y="???">
+                    <UNLOCK_QUEST>holodecking-the-simulation-room</UNLOCK_QUEST>
+                    <COMPLETE_QUEST>find-sidequest-18.1</COMPLETE_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="holodecking-the-simulation-room">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="classroom" skin="normal"></LOCATION>
+            <NARRATION>As you and Pixel were busy upgrading the simulator, Navigator 'Grouch' walks in to check on your progress.</NARRATION>
+            <NARRATION>After an unecessarily thorough inspection, he finally nodded with approval, albeit rather grudgingly.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="navigator" expression="bored">It's acceptable. For a couple of novices at least...</SPEECH>
+                <SPEECH speaker="you" mode="thought">This guy...</SPEECH>
+            </DIALOGUE>
+            <NARRATION>Pixel scowled at him, evidently irritated by his aloofness.</NARRATION>
+            <NARRATION>The navigator didn't seem to notice. He simply hands a set of instructions on a datapad over to you, before grunting a few instructions and leaving you to it.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="navigator" expression="bored">Here.</SPEECH>
+                <SPEECH speaker="navigator" expression="bored">Follow the instructions here and refine your simulations.</SPEECH>
+                <SPEECH speaker="navigator" expression="bored">Don't screw up.</SPEECH>
+                <SPEECH speaker="you">...</SPEECH>
+                <SPEECH speaker="pixel" expression="unimpressed">This guy could really use some basic charm lessons.</SPEECH>
+                <SPEECH speaker="you">Let's not mind him. He's like that all the time anyways...</SPEECH>
+                <SPEECH speaker="pixel">Yeah, come on. Let's finish this up.</SPEECH> 
+            </DIALOGUE>
+            <COMPLETE_QUEST>holodecking-the-simulation-room</COMPLETE_QUEST>
+            <EXTERNAL_ACTION name="startMission">
+                <ARGUMENT>18.1</ARGUMENT>
+            </EXTERNAL_ACTION>
+        </SEQUENCE>
+    </QUEST>
+</STORY>

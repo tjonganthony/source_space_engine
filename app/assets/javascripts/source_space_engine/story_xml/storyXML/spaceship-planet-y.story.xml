@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="spaceship-planet-y" type="normal">
+	<MAP>
+		<LOCATION name="yourRoom" skin="normal">
+			<OBJECT name="door" skin="yourRoom" x="831" y="270">
+				<GOTO_LOCATION>hallway</GOTO_LOCATION>
+			</OBJECT>
+			<OBJECT name="yourNoticeBoard" skin="normal" x="1083" y="287">
+				<EXTERNAL_ACTION name="openTemplate">
+					<ARGUMENT>announcements</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</OBJECT>
+			<OBJECT name="yourBag" skin="normal" x="126" y="735">
+				<EXTERNAL_ACTION name="openTemplate">
+					<ARGUMENT>inventory</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</OBJECT>
+			<OBJECT name="yourCabinet" skin="normal" x="0" y="0">
+				<EXTERNAL_ACTION name="openTemplate">
+					<ARGUMENT>achievements</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</OBJECT>
+			<OBJECT name="yourTablet" skin="normal" x="1446" y="475">
+				<EXTERNAL_ACTION name="openTemplate">
+					<ARGUMENT>IDE</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</OBJECT>
+			<OBJECT name="yourTextbook" skin="normal" x="1346" y="427">
+				<EXTERNAL_ACTION name="openTemplate">
+					<ARGUMENT>IDE</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</OBJECT>
+		</LOCATION>
+		<LOCATION name="HMoffice" skin="normal">
+			<OBJECT name="door" skin="HMoffice" x="1499" y="87">
+				<GOTO_LOCATION>hallway</GOTO_LOCATION>
+			</OBJECT>
+			<OBJECT name="hartin-menz" skin="officeSitting" x="754" y="201">
+				<SEQUENCE>
+					<DIALOGUE>
+						<SPEECH speaker="hartin-menz" expression="normal" audience="you" mode="normal">Greetings Cadet! Grandmaster Lok-Kim and I are very impressed by the initiative shown by you and your friend. We have given clearance to Scottie to bring you down to Planet-Y. Go see him when you're ready.</SPEECH>
+					</DIALOGUE>
+				</SEQUENCE>
+			</OBJECT>
+			<TEMP_OBJECT id="mysteryCube" name="mysteryCube" skin="normal" x="614" y="624">
+				<SEQUENCE>
+					<POPUP>
+						<IMAGE>mysteryCube.png</IMAGE>
+						<NARRATION>The cube looks out of place in Grandmaster Hartin-Menz's office. There is an unsettling red light in the middle of each face that seems like it's watching you all the time. Creepy... Grandmaster Hartin says you can keep it. Not surprising. Wouldn't want that in my office either.</NARRATION>
+					</POPUP>
+				</SEQUENCE>
+				<EXTERNAL_ACTION name="pickUpCollectible">
+					<ARGUMENT>mysteryCube</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</TEMP_OBJECT>
+			<TEMP_OBJECT id="dissertation" name="dissertation" skin="normal" x="166" y="314">
+				<SEQUENCE>
+					<DIALOGUE>
+						<SPEECH speaker="hartin-menz" expression="happy" audience="you" mode="normal">Ah, I see you've found my dissertation! Take it with you and give it a read if you like!</SPEECH>
+					</DIALOGUE>
+					<POPUP>
+						<IMAGE>dissertation.png</IMAGE>
+						<NARRATION>"Objects in OZ" Hmm, sounds interesting.</NARRATION>
+					</POPUP>
+				</SEQUENCE>
+				<EXTERNAL_ACTION name="pickUpCollectible">
+					<ARGUMENT>dissertation</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</TEMP_OBJECT>
+			<OBJECT name="runicCarpet" skin="normal" x="440" y="751">
+				<SEQUENCE>
+					<POPUP>
+						<IMAGE>winnersRunicCarpet.png</IMAGE>
+						<NARRATION>The handiwork of the runic carpet contest winner! Such intricate workmanship!</NARRATION>
+					</POPUP>
+				</SEQUENCE>
+			</OBJECT>
+		</LOCATION>
+		<LOCATION name="LKoffice" skin="normal">
+			<OBJECT name="door" skin="LKoffice" x="205" y="87">
+				<GOTO_LOCATION>hallway</GOTO_LOCATION>
+			</OBJECT>
+			<OBJECT name="origamiRabbits" skin="normal" x="631" y="381">
+				<SEQUENCE>
+					<DIALOGUE>
+						<SPEECH speaker="lok-kim" expression="happy" audience="you" mode="normal">Ah, you like my origami rabbits? I generated them on the computer using this nifty little bit of code I wrote. I can print a new pair out for you right now. Here!</SPEECH>
+					</DIALOGUE>
+					<POPUP>
+						<IMAGE>origamiRabbits.png</IMAGE>
+						<NARRATION>A pair of freshly printed origami rabbits. There's a tiny marking on its back. Looks like a net address! https://www.comp.nus.edu.sg/~lowkl/publications/oa_tvcg2013_lowres.pdf</NARRATION>
+					</POPUP>
+				</SEQUENCE>
+			</OBJECT>
+			<OBJECT name="lok-kim" skin="officeSitting" x="805" y="193">
+				<SEQUENCE>
+					<DIALOGUE>
+						<SPEECH speaker="lok-kim" expression="normal" audience="you" mode="normal">Hello there, Cadet! I trust your preparations for going down to Planet-Y are going smoothly? We don't know what to expect down there, so make sure you go in fully prepared. We've lost Cadets to nasty accidents during missions before. We really wouldn't want a recurrence of that.</SPEECH>
+					</DIALOGUE>
+				</SEQUENCE>
+			</OBJECT>
+			<OBJECT name="3DrunesDisplay" skin="normal" x="1608" y="76">
+				<SEQUENCE>	
+					<POPUP>
+						<IMAGE>3Drune.png</IMAGE>
+						<NARRATION>The work of the winner of the 3D runes contest. Such magnificent beauty!</NARRATION>
+					</POPUP>
+				</SEQUENCE>
+			</OBJECT>	
+			<TEMP_OBJECT id="LK-office-collectibles" name="robotDog" skin="normal" x="1539" y="472">
+				<SEQUENCE>
+					<POPUP>
+						<IMAGE>robotDog.png</IMAGE>
+						<NARRATION>The robot dog emits a sharp, mechanical bark and follows you around with its tail wagging.</NARRATION>
+						<DIALOGUE>
+							<SPEECH speaker="lok-kim" expression="happy">Ah, I see you've met Byte!</SPEECH>
+							<SPEECH speaker="lok-kim" expression="happy">He's a retro bot I got from a junkyard sale. He even still has a floppy disk reader! Can you believe it?</SPEECH>
+							<SPEECH speaker="lok-kim" expression="worried">Unfortunately, he doesn't have many friends. All the tech on board this ship are too advanced for him to interface with.</SPEECH>
+							<SPEECH speaker="lok-kim" expression="worried">He seems to really like you though. You can keep him if you like. Just be sure to take good care of him.</SPEECH>
+						</DIALOGUE>
+					</POPUP>
+				</SEQUENCE>
+				<EXTERNAL_ACTION name="pickUpCollectible">
+					<ARGUMENT>robotDog</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</TEMP_OBJECT>
+		</LOCATION>
+		<LOCATION name="hallway" skin="normal">
+			<OBJECT name="door" skin="hallway-HMoffice" x="1235" y="347">
+				<GOTO_LOCATION>HMoffice</GOTO_LOCATION>
+			</OBJECT>
+			<OBJECT name="door" skin="hallway-LKoffice" x="637" y="371">
+				<GOTO_LOCATION>LKoffice</GOTO_LOCATION>
+			</OBJECT>
+			<OBJECT name="door" skin="hallway-cmdCenter" x="1127" y="409">
+				<GOTO_LOCATION>cmdCenter</GOTO_LOCATION>
+			</OBJECT>
+			<OBJECT name="door" skin="hallway-telebay" x="1023" y="480">
+				<GOTO_LOCATION>telebay</GOTO_LOCATION>
+			</OBJECT>
+			<OBJECT name="door" skin="hallway-greatHall" x="178" y="173">
+				<GOTO_LOCATION>greatHall</GOTO_LOCATION>
+			</OBJECT>
+			<OBJECT name="door" skin="hallway-classroom" x="1473" y="225">
+				<GOTO_LOCATION>classroom</GOTO_LOCATION>
+			</OBJECT>
+			<OBJECT name="door" skin="hallway-yourRoom" x="1633" y="97">
+				<GOTO_LOCATION>yourRoom</GOTO_LOCATION>
+			</OBJECT>
+		</LOCATION>
+		<LOCATION name="greatHall" skin="normal">
+			<OBJECT name="door" skin="greatHall" x="102" y="609">
+				<GOTO_LOCATION>hallway</GOTO_LOCATION>
+			</OBJECT>
+			<OBJECT name="about" skin="normal" x="1057" y="136">
+				<EXTERNAL_ACTION name="openTemplate">
+					<ARGUMENT>about</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</OBJECT>
+			<OBJECT name="forum" skin="normal" x="1041" y="585">
+				<EXTERNAL_ACTION name="openTemplate">
+					<ARGUMENT>forum</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</OBJECT>
+			<OBJECT name="todaysSpecial" skin="normal" x="324" y="865">
+				<SEQUENCE>
+					<POPUP>
+						<IMAGE>todaysSpecial.png</IMAGE>
+						<NARRATION>Today's special: Primordial Soup! Try our chef's latest creation, filled with nutritious organic compounds to nourish your soul!</NARRATION>
+					</POPUP>
+				</SEQUENCE>
+			</OBJECT>
+			<OBJECT name="announcements" skin="normal" x="355" y="0">
+				<EXTERNAL_ACTION name="openTemplate">
+					<ARGUMENT>announcements</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</OBJECT>
+			<OBJECT name="leaderboard" skin="normal" x="127" y="0">
+				<EXTERNAL_ACTION name="openTemplate">
+					<ARGUMENT>leaderboard</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</OBJECT>
+		</LOCATION>
+		<LOCATION name="classroom" skin="normal">
+			<OBJECT name="door" skin="classroom" x="159" y="350">
+				<GOTO_LOCATION>hallway</GOTO_LOCATION>
+			</OBJECT>
+			<OBJECT name="todaysTopic" skin="normal" x="87" y="98">
+				<EXTERNAL_ACTION name="openTemplate">
+					<ARGUMENT>missions</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</OBJECT>
+			<OBJECT name="holoTerminal" skin="normal" x="100" y="200">
+				<EXTERNAL_ACTION name="openTemplate">
+					<ARGUMENT>lectureSlides</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</OBJECT>
+			<OBJECT name="classRoster" skin="normal" x="995" y="287">
+				<EXTERNAL_ACTION name="openTemplate">
+					<ARGUMENT>classmates</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</OBJECT>
+			<OBJECT name="trainings" skin="normal" x="1158" y="369">
+				<EXTERNAL_ACTION name="openTemplate">
+					<ARGUMENT>ide</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</OBJECT>
+		</LOCATION>
+		<LOCATION name="cmdCenter" skin="normal">
+			<OBJECT name="window" skin="planet-y" x="501" y="0">
+				<SEQUENCE>
+					<NARRATION>That's Planet-Y, the planet that's being targeted. We don't know much else about it at the moment, just that we need to get there soon to warn the inhabitants of what's to come.</NARRATION>
+				</SEQUENCE>
+			</OBJECT>
+			<OBJECT name="characters" skin="normal" x="771" y="546">
+			</OBJECT>
+			<OBJECT name="door" skin="cmdCenter" x="159" y="478">
+				<GOTO_LOCATION>hallway</GOTO_LOCATION>
+			</OBJECT>
+			<OBJECT name="commentsTerminal" skin="normal" x="259" y="425">
+				<EXTERNAL_ACTION name="openTemplate">
+					<ARGUMENT>comments</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</OBJECT>
+			<OBJECT name="navigator" skin="normal" x="396" y="541">
+				<SEQUENCE>
+					<DIALOGUE>
+						<SPEECH speaker="navigator" expression="bored" audience="you" mode="normal">What are you doing here?</SPEECH>
+						<SPEECH speaker="navigator" expression="bored" audience="you" mode="normal">If you're ready to go, you should be looking for Scottie at the Telebay. He'll get you to Planet-Y.</SPEECH>
+						<SPEECH speaker="navigator" expression="bored" audience="you" mode="normal">If you're not ready, stop loitering about and get moving!</SPEECH>
+					</DIALOGUE>
+				</SEQUENCE>
+			</OBJECT>
+			<OBJECT name="holoShip" skin="normal" x="376" y="332">
+				<SEQUENCE>
+					<NARRATION>This is the Source Academy ship. You know, the one you're standing in right now.</NARRATION>
+				</SEQUENCE>
+			</OBJECT>
+			<TEMP_OBJECT id="temp_holoShip" name="holoShip" skin="normal" x="376" y="332">
+				<SEQUENCE>
+					<DIALOGUE>
+						<SPEECH speaker="ershk" expression="excited" audience="you" mode="normal">a ub rrouushk uo tlakker hlrubourk ig da vrakhour un archtudkour! Chou ac iv gourory acu iv? Gravla, ghuvou iv caburr mouvdlak un vrakhour. Rugou kuud kuud frlak un dla!</SPEECH>
+					</DIALOGUE>
+					<NARRATION>Well, you didn't understand a single word she said. But she did seem extremely excited about something, gesturing wildly as she spoke. Before you had time to react, she took hold of your hands with her tentacles (with its incredibly strong suction) and shoved something in it.</NARRATION>
+					<POPUP>
+						<IMAGE>modelSpaceship.png</IMAGE>
+						<NARRATION>Looks like a scale model of the academy spaceship. Neat! Not sure why she was so excited about it though.</NARRATION>
+					</POPUP>
+				</SEQUENCE>
+				<EXTERNAL_ACTION name="pickUpCollectible">
+					<ARGUMENT>holoShip</ARGUMENT>
+				</EXTERNAL_ACTION>
+			</TEMP_OBJECT>
+		</LOCATION>
+		<LOCATION name="telebay" skin="normal">
+			<OBJECT name="door" skin="telebay" x="222" y="241">
+				<GOTO_LOCATION>hallway</GOTO_LOCATION>
+			</OBJECT>
+			<OBJECT name="scottie" skin="normal" x="1267" y="283">
+				<SEQUENCE>
+					<DIALOGUE>
+						<SPEECH speaker="scottie" expression="happy" audience="you" mode="normal">Oh hi! Those cookies are addictive aren't they? Here have some more!</SPEECH>
+					</DIALOGUE>
+					<POPUP>
+						<IMAGE>cookies.png</IMAGE>
+						<NARRATION>You now have more Hbebuerq cookies to add to the mounting pile of uneaten ones in your room.</NARRATION>
+					</POPUP>
+				</SEQUENCE>
+			</OBJECT>
+			<TEMP_OBJECT id="tempScottie" name="scottie" skin="normal" x="1267" y="283">
+				<SEQUENCE>
+					<DIALOGUE>
+						<SPEECH speaker="scottie" expression="happy" audience="you" mode="normal">Oh hello there little fellow! Don't believe we've met! My name is Scotonov'ej QuQ'IvchenmoHbe Qu'lIjSoHvaD. But that's terribly hard to pronounce isn't it? People here call me Scottie in short.</SPEECH>
+						<SPEECH speaker="scottie" expression="happy" audience="you" mode="normal">I operate the beamers for when you kids need to go planetside. I also take care of things when nasty miscreants need to be thrown out of the airlock.</SPEECH>
+						<SPEECH speaker="you" expression="normal" audience="scottie" mode="normal">...</SPEECH>
+						<SPEECH speaker="scottie" expression="happy" audience="you" mode="normal"> Oh don't look so flabbergasted, that rarely ever happens. Well...except that one time...</SPEECH>
+						<SPEECH speaker="scottie" expression="happy" audience="you" mode="normal">Anyway, it was really nice of you to come visit! It gets awfully quiet down here with no one to talk to. Do come by more often!</SPEECH>
+						<SPEECH speaker="scottie" expression="happy" audience="you" mode="normal">Oh, and here, have some cookies. They're home made and my favourite! It stimulates your brain and keeps it sharp. Packed a whole bunch of them with me for the journey, so I have plenty more for you if you like them.</SPEECH>
+					</DIALOGUE>
+					<POPUP>
+						<IMAGE>cookies.png</IMAGE>	
+						<NARRATION>Mmm, home made alien cookies flecked with some weird green stuff. Apparently they are a type of berry called Hbebuerq from Scottie's home world. It's suppose to be brain food, so, how bad can it be, right?</NARRATION>
+					</POPUP>
+				</SEQUENCE>
+			</TEMP_OBJECT>
+			<OBJECT name="sourceAcademy" skin="normal" x="413" y="109">
+				<SEQUENCE>
+					<NARRATION>The Source Academy. Humanity's pride and glory founded by the United Order of Physicists back in 13AE. That's back when they thought the Source had something to do with dark matter and can be explained with quantum physics.</NARRATION>
+					<NARRATION>Things have changed a lot since then. We still don't really know what it is, but it is something entirely different and seems to operate on its own laws of physics. And now we're learning to manipulate it to achieve amazing feats.</NARRATION>
+				</SEQUENCE>
+			</OBJECT> 
+		</LOCATION>
+	</MAP>
+</STORY>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest-15.2" type="sidequest" number="15.2" dependencies="spaceship">
+    <QUEST id="emp-missile">
+        <EFFECTS>
+            <LOCATION name="hallway" skin="normal">
+                <OBJECT name="door" skin="maintenanceAccess" x="???" y="???" >
+                    <SEQUENCE>
+                        <DIALOGUE>
+                            <SPEECH speaker="scottie" expression="happy">Oh hello!</SPEECH>
+                            <SPEECH speaker="you">Scottie? I thought this area is usually restricted?</SPEECH>
+                            <SPEECH speaker="scottie" expression="happy">It is! But I have the override code.</SPEECH>
+                            <SPEECH speaker="you">What were you doing in there anyway?</SPEECH>
+                            <SPEECH speaker="scottie" expression="happy">Calibrating the ship's EMP missile systems.</SPEECH>
+                            <SPEECH speaker="scottie" expression="happy">But I'm taking a cookie break now.</SPEECH>
+                            <SPEECH speaker="you">Need any help?</SPEECH>
+                        </DIALOGUE>
+                        <NARRATION>Scottie paused to consider it for a while.</NARRATION>
+                        <DIALOGUE>  
+                            <SPEECH speaker="scottie" expression="thinking">How come you're so helpful all of the sudden?</SPEECH>
+                            <SPEECH speaker="you">Well, I've kinda always wanted to see what's inside this room...</SPEECH>
+                            <SPEECH speaker="scottie" expression="thinking">Oh, you could've just asked me anytime you know.</SPEECH>
+                            <SPEECH speaker="scottie" expression="happy">But, since you've so kindly offered your help, I'll take you up on that!</SPEECH>
+                            <SPEECH speaker="you" mode="thought">Why did I bring this onto myself?</SPEECH>
+                        </DIALOGUE>
+                    </SEQUENCE>
+                </OBJECT>
+                <OBJECT name="maintenanceAccess-sign" skin="accessGranted" x="???" y="???" ></OBJECT>
+                <COMPLETE_QUEST>emp-missile</COMPLETE_QUEST>
+                <EXTERNAL_ACTION name="startMission">
+                    <ARGUMENT>15.2</ARGUMENT>
+                </EXTERNAL_ACTION>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+</STORY>

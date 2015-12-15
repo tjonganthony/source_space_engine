@@ -10,4 +10,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require source_space_engine/story_xml/pixi.min
+//= require source_space_engine/story_xml/jquery-2.1.4.min
 //= require_tree .

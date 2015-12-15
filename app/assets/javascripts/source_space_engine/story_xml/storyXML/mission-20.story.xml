@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-20" type="mission" number="20" dependencies="spaceship" "deathCube">
+    <QUEST id="the-aftermath">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="deathCube" skin="debris">
+                <SEQUENCE>
+                    <NARRATION>Since the destruction of the Death Cube, the Crystal Order has been busy cleaning up the debris left floating around in the vacuum of space.</NARRATION>
+                    <NARRATION>In the meantime, the Source Academy is sending out recovery crews to retrieve any technology they can from the Death Cube that may help further their understanding of the Source.</NARRATION> 
+                    <NARRATION>Meanwhile, your friends are at the Great hall celebrating the success of their first mission.</NARRATION>
+                </SEQUENCE>
+            </LOCATION>
+            <LOCATION name="yourRoom" skin="normal"></LOCATION>
+        </SEQUENCE>
+        <COMPLETE_QUEST>the-aftermath</COMPLETE_QUEST>
+        <UNLOCK_QUEST>stream-manipulation</UNLOCK_QUEST>
+    </QUEST>
+    <QUEST id="stream-manipulation">
+        <EFFECTS>
+            <LOCATION name="greatHall" skin="party">
+                <SEQUENCE>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" expression="happy">Hey! There you are! We started the party without you. Here, I saved you some food!</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>You join in with your friends, exchanging tales about your encounters during the mission, trying to one-up one another, while Beat listened on with wide-eyed wonder.</NARRATION>
+                    <POPUP>
+                        <IMAGE>holoHartinMenz.png</IMAGE>
+                        <NARRATION>Quite suddenly, the holographic stage flickers to life, projecting a larger than life image of Grandmaster Hartin Menz.</NARRATION>
+                    </POPUP>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz" expression="normal">Greetings cadets! I am sorry to interrupt your festivities, but I have an important announcement.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="normal">First of all, I would like to commend you. You have all done well to aid in the defeat of the Rogue Grandmaster. But it would seem that this fight is far from over.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="serious">Grandmaster Lok Kim and I have received grim news from our scouts.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="serious">It is as we feared - the Rogue Grandmaster is still alive.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="serious">He had managed to escape the Death Cube on an escape pod just moments before the explosion.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>The Cadets look to each other in disbelief. The Great Hall is suddenly abuzz with fervent chattering from the Cadets tinged with fear, anger and shock.</NARRATION>
+                    <NARRATION>Grandmaster Hartin held up a hand, gesturing the Cadets to settle down.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz" expression="serious">Disappointing as it may be, that we have failed to rid the galaxy of this menace, destroying the Death Cube and saving the inhabitants of Planet-Y was a great step forward.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="serious">We have recovered technologies and literature from the Death Cube that are of great intrigue to our Stewards.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="serious">Studying this may well serve to advance our understanding of the Source and it shall be our priority for the weeks to come.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="serious">Your task, as Cadets of the Source Academy would be to assist the Stewards in their task and glean whatever knowledge you can from these studies.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="normal">And so I shall expect to see each and everyone of you in the classroom by 1400 hours.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>And with that, the transmission was over and the hologram of the Grandmaster faded away. The atmosphere now solemn, the cadets made their way out of the Great Hall.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" expression="angry">I can’t believe the Rogue Grandmaster got away after all that! We trained so hard for it too!</SPEECH>
+                        <SPEECH speaker="you">Yeah. I guess he wasn’t the most powerful Sourcerer in the Crystal Order for nothing.</SPEECH>
+                        <SPEECH speaker="you">Maybe the advanced technology in his ship helped him somehow...</SPEECH>
+                        <SPEECH speaker="pixel" expression="serious">Or he may have achieved a level of understanding of the Source higher than any of us can possibly imagine...</SPEECH>
+                        <SPEECH speaker="pixel" expression="serious">If so, the technology that we recover from the Death Cube will be crucial to us if we are to have any hope of defeating him at all.</SPEECH>
+                        <SPEECH speaker="you">You’re right. Come one, let’s hurry on to the classroom. No doubt, Grandmaster Hartin has some insights to share on all the new findings.</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+        <COMPLETE_QUEST>stream-manipulation</COMPLETE_QUEST>
+        <EXTERNAL_ACTION name="startMission">
+            <ARGUMENT>20</ARGUMENT>
+        </EXTERNAL_ACTION>
+    </QUEST>
+    <QUEST id="stream-manipulation-completed">
+        <EFFECTS>
+            <LOCATION name="classroom" skin="classOn">
+                <SEQUENCE>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">Phew, that was intense!</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">Well done Cadets! You are quick to grasp the concept of streams!</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="normal">It will be some years before the Rogue Grandmaster recuperates his strength to retaliate against the Academy.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="normal">You must use this time well to hone your skills in the Source.</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+        <COMPLETE_QUEST>stream-manipulation-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>
+           

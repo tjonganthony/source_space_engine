@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-22" type="mission" number="22" dependencies="spaceship">
+    <QUEST id="finding-grandmaster-se">
+        <EFFECTS>
+            <LOCATION name="telebay" skin="normal">
+                <OBJECT name="scottie" skin="normal" x="1267" y="283">
+                    <SEQUENCE>
+                        <DIALOGUE>
+                            <SPEECH speaker="scottie" expression="happy">Oh hi! Come to see old Scottie one last time before leaving eh? Well, that’s really nice of you.</SPEECH>
+                            <SPEECH speaker="scottie" expression="happy">I see you're well on your way to becoming a fully-fledged Sourcerer.</SPEECH>
+                            <SPEECH speaker="scottie" expression="happy">Don't forget to drop by and visit once in a while.</SPEECH>
+                            <SPEECH speaker="scottie" expression="happy">Well, I won't keep you. All the best!</SPEECH>
+                        </DIALOGUE>
+                    </SEQUENCE>
+                </OBJECT>
+            </LOCATION>
+            <LOCATION name="cmdCenter" skin="normal">
+                <OBJECT name="navigator" skin="normal" x="396" y="541">
+                    <SEQUENCE>
+                        <DIALOGUE>
+                            <SPEECH speaker="navigator" expression="bored">So, you Cadets are graduating huh. Finally, I can have some peace around here.</SPEECH>
+                            <SPEECH speaker="navigator" expression="bored">Before the next batch arrives anyway.</SPEECH>
+                            <SPEECH speaker="navigator" expression="bored">Anyways, good luck or whatever. You kids have a lot of potential.</SPEECH>
+                            <SPEECH speaker="you">Wow, was that compliment?</SPEECH>
+                            <SPEECH speaker="navigator" expression="bored">Don’t push it, kid.</SPEECH>
+                            <SPEECH speaker="you">Okay, okay. Bye then. Maybe I’ll see you again when I come back as a Steward.</SPEECH>
+                        </DIALOGUE>
+                        <NARRATION> He gave a non committal grunt and went back to his work.</NARRATION>
+                    </SEQUENCE>
+                </OBJECT>
+                <OBJECT name="ershk" skin="normal" x="???" y="???">
+                    <SEQUENCE>
+                        <DIALOGUE>
+                            <SPEECH speaker="ershk" expression="excited">Nurk k'deets ig da vla rehkmuot. Kuud rlouk fra uo apprachouk!</SPEECH>
+                            <SPEECH speaker="you">Thanks, I guess?</SPEECH>
+                        </DIALOGUE>
+                    </SEQUENCE>
+                </OBJECT>
+            </LOCATION>
+            <LOCATION name="greatHall" skin="pixel">
+                    <SEQUENCE displayOnce="true">
+                        <NARRATION>You walk in on a group of your friends having lunch at the Great Hall. You decide to join them.</NARRATION>
+                        <PAUSE>
+                            <OBJECT name="pixel" skin="greatHall" x="???" y="???">
+                                <CONTINUE></CONTINUE>
+                            </OBJECT>
+                        </PAUSE>
+                        <DIALOGUE>
+                            <SPEECH speaker="pixel" expression="happy">Hey [player name], we were just talking about our plans from here on out, what with graduation being right around the corner.</SPEECH>
+                            <SPEECH speaker="you">Yeah, time flies doesn’t it. It felt like only yesterday that we were enrolled in the Academy.</SPEECH>
+                            <SPEECH speaker="haskell">The Stewards have been encouraging us to seek apprenticeship under one of the many Grandmasters in the Crystal Order to prepare for the Sourcerer’s examinations.</SPEECH>
+                            <SPEECH speaker="pixel">If we make it through the exams, We will finally be granted the title of Sourcerer!</SPEECH>
+                            <SPEECH speaker="you">Yeah, I’m still deciding who to go with though. The Crystal Order has so many extraordinarily skilled Grandmasters. I feel like I’m spoilt for choice!</SPEECH>
+                            <SPEECH speaker="haskell">That’s true. You should probably think it through before you decide. As for me, I’m going to apprentice with Grandmaster Rahin!</SPEECH>
+                            <SPEECH speaker="you">What about you, Pixel? I’m sure you already have some sort of plan.</SPEECH>
+                            <SPEECH speaker="pixel" expression="excited">Yup! I’m going with Grandmaster Se, without question!</SPEECH>
+                            <SPEECH speaker="you">Grandmaster Se?</SPEECH>
+                            <SPEECH speaker="pixel" expression="surprised">You haven’t heard of him? He is something of a legend in the Crystal Order.</SPEECH>
+                            <SPEECH speaker="pixel" expression="thinking">Finding him won’t be easy though. He is as elusive as he is legendary.</SPEECH>
+                            <SPEECH speaker="pixel" expression="thinking">Rumour has it that he is studying the secrets of the Source in some far flung corner of the universe. No one knows exactly where he is though.</SPEECH>
+                            <SPEECH speaker="you">Hmm, that sounds intriguing...</SPEECH>
+                            <SPEECH speaker="haskell">But surely it will be easier to seek tutelage from one of the Grandmasters here in the Crystal Order?</SPEECH>
+                            <SPEECH speaker="haskell">You’d never know how long it will take for you to find Grandmaster Se, or if your can even find him at all.</SPEECH>
+                            <SPEECH speaker="you"> But if he is really all that he is rumoured to be, it will definitely be worth the effort.</SPEECH>
+                            <SPEECH speaker="pixel" expression="thinking">My thoughts exactly.</SPEECH>
+                            <SPEECH speaker="pixel" expression="thinking">Come on, let’s head to Grandmaster Hartin’s office. Maybe he can give us some clue as to where to start.</SPEECH>
+                        </DIALOGUE>
+                    </SEQUENCE>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="extreme-streams">
+        <EFFECTS>
+            <LOCATION name="HMoffice" skin="normal">
+                <SEQUENCE>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz" expression="happy">Hello, Cadets! What brings you to my office?</SPEECH>
+                        <SPEECH speaker="you">Pixel and I want to seek tutelage under the legendary Grandmaster Se! But he is notoriously difficult to find, so we were wondering if you could nudge us in the right direction.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">Ah, Grandmaster Se! That is an admirable goal indeed.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">I must warn you beforehand though, this is an onerous quest not for the faint of heart.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">Locating and reaching him will require mastery of the most extreme of Source Stream techniques.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy"> Which I would be happy to teach you if you are committed to this quest.</SPEECH>
+                        <SPEECH speaker="pixel" expression="excited">Of course! Being Grandmaster Se’s apprentice has been my goal ever since I heard of his legendary achievements!</SPEECH>
+                        <SPEECH speaker="you">We’re committed to this!</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">Excellent. Then let us begin! </SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+        <EXTERNAL_ACTION name="startMission">
+            <ARGUMENT>22</ARGUMENT>
+        </EXTERNAL_ACTION>
+    </QUEST>
+    <QUEST id="extreme-streams-completed">
+        <EFFECTS>
+            <LOCATION name="greatHall" skin="graduation">
+                <SEQUENCE>
+                    <NARRATION>Most of the Cadets have already gathered at the Great Hall, which is decked out with long trailing banners cascading from the ceiling.</NARRATION>
+                    <NARRATION>It looks like the whole of the Academy is in attendance, including the Grandmaster and Stewards.</NARRATION>
+                    <NARRATION>On the stage at the center of the Great Hall, stood an enormous holographic projection of both Grandmasters Hartin Menz and Lok-Kim.</NARRATION>
+                    <PAUSE>
+                        <OBJECT name="holo-grandmasters" skin="normal" x="???" y="???">
+                            <CONTINUE></CONTINUE>
+                        </OBJECT>
+                    </PAUSE>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz" expression="happy">Well, Cadets! Today’s the day. Us Grandmasters and Stewards at the Academy have taught you all that we can about the Source.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">You have done well thus far, and some of you have even gone above and beyond in helping us defeat the Rogue Grandmaster.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">From here on out, you will take your training into your own hands. Mastery of the Source is a life long journey, and today is only the beginning.</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="happy">We wish you the best of luck in your apprenticeship.</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="happy">Hopefully, when the time comes to face the Rogue Grandmaster again, you’ll all be skilled Sourcerers capable enough to stand against him.</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="happy"> But for now, we should celebrate this milestone you have achieved!</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>You spend the rest of the day with your fellow Cadets, reminiscing the times you spent together at the Academy, and discussing your plans for the future. It’s been quite a ride.</NARRATION>
+                </SEQUENCE>
+            </LOCATION>
+            <LOCATION name="hallway">
+                <OBJECT name="beat" skin="hallway" x="???" y="???">
+                    <SEQUENCE>
+                        <DIALOGUE>
+                            <SPEECH speaker="you">Hey Beat! What’s up?</SPEECH>
+                            <SPEECH speaker="beat" expression="normal">Hey, [player name] and Pixel. I came to say goodbye.</SPEECH>
+                            <SPEECH speaker="you">So soon?</SPEECH>
+                            <SPEECH speaker="beat" expression="normal">Well, since you and Pixel are gonna be setting off to find Grandmaster Se, I figured it’s time for me to leave too.</SPEECH>
+                            <SPEECH speaker="pixel" expression="sad">You sure? You’re welcome to come with us if you want.</SPEECH>
+                            <SPEECH speaker="beat" expression="normal">It’s tempting, but no thanks. I ought to return to my home. I’ve been away long enough.</SPEECH>
+                            <SPEECH speaker="beat" expression="normal">Thanks for everything you’ve done for me and my people! One day, when I’m old enough, I’ll enrol in the Source Academy myself!</SPEECH>
+                            <SPEECH speaker="pixel" expression="normal">Heh, maybe we’ll be Stewards or something by then.</SPEECH>
+                            <SPEECH speaker="you">Good luck, Beat! Have a safe trip home.</SPEECH>
+                            <SPEECH speaker="beat" expression="normal">Thanks! I’ll miss you guys.</SPEECH>
+                        </DIALOGUE>
+                    </SEQUENCE>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="HMoffice" skin="normal">
+                <SEQUENCE>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">That was tough!</SPEECH>
+                        <SPEECH speaker="pixel" expression="excited">Yeah, but I think I’ve gotten a hang of it.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">And just in time as well! The Graduation Ceremony is about to begin.</SPEECH>
+                        <SPEECH speaker="you">Wow, look at the time. We’d better go get ready.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">I wish you the best of luck! I have no doubt that you’ll succeed in finding Grandmaster Se.</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+            </LOCATION>
+        </SEQUENCE>
+        <COMPLETE_QUEST>finding-grandmaster-se</COMPLETE_QUEST>
+        <COMPLETE_QUEST>extreme-streams</COMPLETE_QUEST>
+        <COMPLETE_QUEST>extreme-streams-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>   

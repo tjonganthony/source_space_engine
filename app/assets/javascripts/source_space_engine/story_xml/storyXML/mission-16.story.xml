@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-16" type="mission" number="16" dependencies="spaceship">
+    <QUEST id="new-message-received" helpText="Check for new messages on your wrist device.">
+        <EFFECTS>
+            <LOCATION name="yourRoom" skin="normal">
+                <SEQUENCE>
+                    <NARRATION>You wake up late the next day. Cadet trainings have been put on hold for the day as the Academy scrambles to handle the unfolding crisis. There was a soft "ping" on your wrist device, indicating you had received a new message.</NARRATION>
+                    <NARRATION>It was from Pixel. Apparently the Cadets are throwing some sort of welcome party for Beat at the Great Hall.</NARRATION>
+                </SEQUENCE>
+                <COMPLETE_QUEST>new-message-received</COMPLETE_QUEST>
+                <UNLOCK_QUEST>roboWarriors</UNLOCK_QUEST>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="roboWarriors" helpText="Meet your friends at the GreatHall">
+        <EFFECTS>
+            <LOCATION name="greatHall" skin="normal">
+                <SEQUENCE>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" expression="happy">Hey, there you are!</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>You find her seated at your usual table with Beat. There's an unusually large amount of people gathered around the table.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" expression="happy">Everyone's fascinated by Beat. Some of the cadets are trying to teach him to sing old classics from the 21st century B.E.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>You pause for a while to listen. He's actually pretty good.</NARRATION>
+                    <NARRATION>After acquiring a bowl of primordial soup from the cafeteria, you sit down beside pixel. She was still watching Beat sing, but you could tell from her expression that she was thinking about something else.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" expression="serious">So what do you reckon is going to happen now? It's been a while since we got back from Planet-Y, we still haven't heard anything from the Grandmasters or the Stewards yet.</SPEECH>
+                        <SPEECH speaker="you">I don't know. It sounds pretty bad. They are even suspending classes because the Grandmasters and stewards are too busy.</SPEECH>
+                        <SPEECH speaker="pixel" expression="serious">Yeah. I wish they'd give us something to do though! I hate sitting around like this. I'm sure there's got to be something we cadets can do to help!</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>Before you could say anything more, you hear a familiar voice over the Academy's comm systems. You recognise it as Grandmaster Hartin Menz's voice.
+                    </NARRATION>
+                    <POPUP>
+                        <IMAGE>holoHartin.png</IMAGE>
+                        <NARRATION>The holographic projector on the stage flickers to life, casting a larger-than-life image of the Grandmaster onto the stage.</NARRATION>
+                    </POPUP>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz" expression="normal">Greetings Cadets!</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="serious">I'm sorry to interrupt your lunch so suddenly, but we have urgent news!</SPEECH>
+                        <NARRATION>The cadets in the Great Hall fell silent. Turning their attention to the Grandmaster.</NARRATION>
+                    </DIALOGUE>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz" expression="serious">I am sure all of you are aware of the events that have taken place in the past few days.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="normal">Of course, their actions cannot be allowed to continue.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="serious">The Crystal Order and the Academy are currently busy setting up defences on Planet Y in order to prevent the mass genocide of the Trebbls and capture the perpertrators.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="normal">However, due to the scale of the event, our resources have been stretched pretty thin.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="serious">As such, the Crystal Order will be enlisting the help of our talented Cadets.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">And that's all of you!</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">To help us choose the most qualified candidates, each of you will be given a Source sensitive bot. You will be competing with each other to solve the various challenges presented.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">A handful of Cadets with the highest performance will be given the opportunity to be a part of a special and very important mission!</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>There was a mixture of excitement and nervousness among the Cadets in the Great Hall.</NARRATION>
+                    <NARRATION>Pixel in particular looked pretty fired up</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" expression="excited">Let's do this!</SPEECH>
+                        <SPEECH speaker="you">They must be pretty desperate if they are turning to the Cadets for such a task.</SPEECH>
+                        <SPEECH speaker="pixel" expression="excited">Or maybe they just recognise that some of us Cadets have the potential to do great things. Come on, we can do this!</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">The contest begins now! May the Source be ever in your favour!</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <EXTERNAL_ACTION name="startMission">
+                    <ARGUMENT>16</ARGUMENT>
+                </EXTERNAL_ACTION>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="roboWarriors-completed">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="greatHall" skin="normal"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">Whew, that was intense!</SPEECH>
+                <SPEECH speaker="pixel">We made it though! How do you think we did?</SPEECH>
+                <SPEECH speaker="you">I feel pretty good about our chances. We'll find for sure soon.</SPEECH>
+            </DIALOGUE>
+        </SEQUENCE>
+        <COMPLETE_QUEST>roboWarriors-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>

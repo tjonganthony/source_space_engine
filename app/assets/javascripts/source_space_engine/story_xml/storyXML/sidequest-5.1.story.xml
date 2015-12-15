@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest5.1" type="sidequest" number="5.1" dependencies="spaceship">
+    <QUEST id="find-sidequest5.1">
+        <EFFECTS>
+            <LOCATION name="yourRoom" skin="normal">
+                <OBJECT name="alarmClock" x="629" y="479">
+                    <UNLOCK_MISSION>wizard</UNLOCK_MISSION>
+                    <COMPLETE_QUEST>find-sidequest5.1</COMPLETE_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="wizard">
+        <EFFECTS></EFFECTS>
+            <SEQUENCE>
+                <LOCATION name="yourRoom" skin="normal"></LOCATION>
+                <NARRATION>Unexpectedly, you manage to crawl out of bed with ample time before your first lesson.</NARRATION>
+                <DIALOGUE>
+                    <SPEECH speaker="you">It’s Wave Reading today… I hope I don’t fall asleep.</SPEECH>
+                    <SPEECH speaker="you">I guess I should try to arrive early this time. </SPEECH>
+                    <SPEECH speaker="you">After all, punctuality has a direct correlation with good grades.</SPEECH>
+                    <SPEECH speaker="you">Or so the Stewards like to say...</SPEECH>
+                </DIALOGUE>
+                <LOCATION name="hallway" skin="normal"></LOCATION>
+                <NARRATION>You make your way to class, without needing to hurry much.</NARRATION>
+                <NARRATION>The corridors are quite empty, which is a refreshing change.</NARRATION>
+                <NARRATION>You reach the classroom with more than 15 minutes to spare before class starts.</NARRATION>
+                <NARRATION>As you were just about to enter the classroom, you hear Grandmaster Lok-Kim's voice through the door.</NARRATION>
+                <DIALOGUE>
+                    <SPEECH speaker="you" mode="thought">Oh! Grandmaster Lok-Kim is already in class.</SPEECH>
+                    <SPEECH speaker="lok-kim" expression="happy">... Look at those curves! Just beautiful!</SPEECH>
+                    <SPEECH speaker="you" mode="thought">...and what in space is he exclaiming about?! Do I really want to know...?</SPEECH>
+                </DIALOGUE>
+                <LOCATION name="classroom" skin="classOn"></LOCATION>
+                <DIALOGUE>
+                    <SPEECH speaker="lok-kim" expression="happy">Oh, I didn’t see you there. You’re very early for class!</SPEECH>
+                    <SPEECH speaker="lok-kim" expression="happy">Punctuality has a direct correlation with good grades, you know.</SPEECH>
+                    <SPEECH speaker="lok-kim" expression="happy">You must be on the right track.</SPEECH>
+                </DIALOGUE>
+                <NARRATION>You notice that there are several wavy lines, glowing and rippling at different heights.</NARRATION>
+                <DIALOGUE>
+                    <SPEECH speaker="lok-kim" expression="happy">Oh, I see you've noticed these beautiful curves.</SPEECH>
+                    <SPEECH speaker="you" mode="thought">So that was that he was talking about...</SPEECH>
+                    <SPEECH speaker="lok-kim" expression="happy">Hmm, tell you what, since you’re early, I’ll teach you something new.</SPEECH>
+                    <SPEECH speaker="lok-kim" expression="happy">Your other classmates won’t have this privilege! That’ll teach them to come late... Kids these days...</SPEECH>
+                    <SPEECH speaker="you" mode="normal">Um, it's okay, I can just space out somewhere -</SPEECH>
+                    <SPEECH speaker="lok-kim" expression="worried">Unacceptable! Spacing out is banned in this section of the universe.</SPEECH>
+                    <SPEECH speaker="lok-kim" expression="happy">Come! Recreate these beautiful curves with me!</SPEECH>
+                    <SPEECH speaker="you" mode="thought">Oh man... I should have just slept in...</SPEECH>
+                </DIALOGUE>
+                <OBJECT name="lok-kim" skin="classroom" x="184" y="235"></OBJECT>
+                <OBJECT name="glowingCurves" skin="normal" x="709" y="144">
+                    <COMPLETE_MISSION>wizard</COMPLETE_MISSION>
+                    <EXTERNAL_ACTION name="startMission">
+                        <ARGUMENT>4.1</ARGUMENT>
+                    </EXTERNAL_ACTION>
+                </OBJECT>
+            </SEQUENCE> 
+    </QUEST>
+</STORY>

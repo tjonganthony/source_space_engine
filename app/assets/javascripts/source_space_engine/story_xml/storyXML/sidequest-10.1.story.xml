@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest10.1" type="sidequest" number="10.1" dependencies="spaceship">
+    <QUEST id="find-sidequest10.1">
+        <EFFECTS>
+            <LOCATION name="yourRoom" skin="normal">
+                <OBJECT name="keyboard" x="???" y="???">
+                    <UNLOCK_MISSION>the-voice-of-mickey-mouse</UNLOCK_MISSION>
+                    <COMPLETE_QUEST>find-sidequest10.1</COMPLETE_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="the-voice-of-mickey-mouse">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="yourRoom" skin="normal"></LOCATION>
+            <NARRATION>Having finished all of your assignments early, you decided to take this opportunity to continue working on your Planet Gazorpazorp Galactic Music Competition</NARRATION>
+            <NARRATION>Since you lack proper vocal training, you start thinking about ways to manipulate sound using the Source.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="you" mode="thought">Right, this shouldn't be too difficult.</SPEECH>
+                <SPEECH speaker="you" mode="thought">Once I figure out how to manipulate sound with the Source, I'll win this competition with my boundless creativity and finely tuned musical sense, and become a galactic music icon!</SPEECH>
+            </DIALOGUE>
+            <COMPLETE_MISSION>echoes-of-time</COMPLETE_MISSION>
+            <EXTERNAL_ACTION name="startMission">
+                <ARGUMENT>10.1</ARGUMENT>
+            </EXTERNAL_ACTION>
+        </SEQUENCE>
+    </QUEST>
+</STORY>

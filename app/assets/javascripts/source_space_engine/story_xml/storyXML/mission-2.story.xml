@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-2" type="mission" number="2" dependencies="spaceship">
+    <QUEST id="go-to-class">
+        <EFFECTS>
+            <LOCATION name="hallway" skin="normal">
+                <SEQUENCE displayOnce="true">
+                    <NARRATION>
+                        As you walked along the hallway, you hear an announcement on the speakers. "Attention all cadets! The class Aesthetic Uses of Source 101 will begin in 5 minutes! Please proceed immediately to the designated classroom."
+                    </NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="you" expression="shocked">
+                            What?! 5 minutes? I don’t even know where that is!
+                        </SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>
+                        "Latecomers will receive detention."
+                    </NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">
+                            Oh man, I have to get going!
+                        </SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <COMPLETE_QUEST>go-to-class</COMPLETE_QUEST>
+                <UNLOCK_QUEST>aesthetics-101</UNLOCK_QUEST>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="aesthetics-101">
+        <EFFECTS>
+            <LOCATION name="classroom" skin="classOn">
+                <SEQUENCE displayOnce="true">
+                    <DIALOGUE>
+                        <SPEECH speaker="you">Whew… Made it in time, somehow. But this classroom… what’s going on?</SPEECH>
+                    </DIALOGUE>
+                    <POPUP>
+                        <IMAGE>messyClassroom.png</IMAGE>
+                        <NARRATION>Bits and pieces of twine, cloth, thread and wool are strewn across the classroom tables. The other students are looking at the items nervously, unsure what to expect.</NARRATION>
+                    </POPUP>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">This place is a mess! Are they sure this isn’t some sort of underwater basket weaving class?!</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>Before you can inspect anything further, someone walks up to you from behind.</NARRATION>
+                    <NARRATION>His towering presence is unmistakable – this is Professor Hartin Menz, a Grandmaster of the Academy. You even recognize his voice from the holographic brochures and promotional videos you’ve been perusing.</NARRATION>
+                    <NARRATION>But more than that, he is a member of the prestigious Crystal Order, an elite team of Sourcerers who uphold justice in the universe through their mastery of the Source.</NARRATION>
+                    <NARRATION>As you’ve heard, he and the other Grandmaster Lok-Kim, are in charge of research and education pertaining to the Source and its uses.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz" expression="normal">Ah, our final student is here. And just in time, too!</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="normal">Let’s begin, then.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="normal">Today, you will learn to use the Source to manipulate these fabrics into a beautiful patchwork quilt.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="normal">These are all basic techniques you’ll need to learn as a Sourcerer before we can go into more difficult stuff.</SPEECH>
+                    </DIALOGUE>
+                    <POPUP>
+                        <IMAGE>patterns.png</IMAGE>
+                        <NARRATION>Here are some of the patterns you’ll be using.</NARRATION>
+                    </POPUP>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz" expression="normal">Now, try it out yourself!</SPEECH>
+                        <SPEECH speaker="you">This doesn't look so hard.</SPEECH>
+                        <SPEECH speaker="you">Time to give it a shot!</SPEECH>
+                    </DIALOGUE>
+                    <PAUSE>
+                        <OBJECT name="classHolo" skin="runicCarpet" x="709" y="144">
+                            <CONTINUE></CONTINUE>
+                        </OBJECT>
+                    </PAUSE>
+                </SEQUENCE>
+                <OBJECT name="classHolo" skin="runicCarpet" x="709" y="144"></OBJECT>
+                <OBJECT name="hartin-menz" skin="classroom" x="184" y="234"></OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+        <EXTERNAL_ACTION name="startMission">
+            <ARGUMENT>2</ARGUMENT>
+        </EXTERNAL_ACTION>
+    </QUEST>
+    <QUEST id="aesthetics-101-completed">
+        <EFFECT></EFFECT>
+        <SEQUENCE>
+            <LOCATION name="classroom" skin="classOn"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="hartin-menz" expression="happy">Excellent work, class! Some of these quilts are brilliant!</SPEECH>
+                <SPEECH speaker="hartin-menz" expression="happy">As for the rest… Hmm… I guess that’s why this isn’t art school!</SPEECH>
+                <SPEECH speaker="you">That was harder than I thought it’d be… But at least I made it!</SPEECH>
+                <SPEECH speaker="hartin-menz" expression="happy">That’s all for today, class. You have a short break before your next class starts!</SPEECH>
+            </DIALOGUE>
+        </SEQUENCE>
+        <COMPLETE_QUEST>aesthetics-101</COMPLETE_QUEST>
+        <COMPLETE_QUEST>aesthetics-101-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>

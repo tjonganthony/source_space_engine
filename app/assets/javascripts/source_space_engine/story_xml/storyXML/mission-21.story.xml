@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-21" type="mission" number="21" dependencies="spaceship">
+    <QUEST id="force-calculus">
+        <EFFECTS>
+            <LOCATION name="yourRoom" skin="dim">
+                <SEQUENCE>
+                    <NARRATION>You woke up to Beat jumping up and down on your bed, and by extension, on you.</NARRATION>
+                    <NARRATION>Having stayed up late reading up on the intricacies of Streams Manipulation, you didn’t much appreciate the rude awakening.</NARRATION>
+                    <NARRATION>You sat up in your bed and brushed Beat aside grumpily.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">What?</SPEECH>
+                        <SPEECH speaker="beat" expression="normal">Pixel sent me to come get you. She says you’re gonna be late for class if you don’t get your sleepy head out of bed soon.</SPEECH>
+                        <SPEECH speaker="you">Oh, shucks! What time is it?</SPEECH>
+                        <SPEECH speaker="beat" expression="normal">You have exactly 4.75 minutes.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>You hastily get dressed and rush off to the classroom.</NARRATION>
+                </SEQUENCE>
+            </LOCATION>
+            <LOCATION name="classroom" skin="classOn">
+                <SEQUENCE>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz" expression="normal">I see some of you have been up late perusing the new material found on the Death Star.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">This level of dedication is inspiring indeed!</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="happy">I have a feeling that some of you Cadets will be leading at the forefront of the battle against the Rogue Grandmaster in the years to come.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="normal">Today, I will be showing you how streams can be used in other ways as well.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="normal">Those with expert mastery of streams will have the capacity to become truly versatile Sourcerers in his or her own right, being able to adapt to all kinds of situations.</SPEECH>
+                        <SPEECH speaker="hartin-menz" expression="normal">Now, let's begin!</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <OBJECT name="hartin-menz" skin="classroom" x="184" y="234"></OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+        <EXTERNAL_ACTION name="startMission">
+            <ARGUMENT>21</ARGUMENT>
+        </EXTERNAL_ACTION>
+    </QUEST>
+    <QUEST id="force-calculus-completed">
+        <EFFECTS>
+            <LOCATION name="classroom" skin="classOn">
+                <SEQUENCE>
+                    <DIALOGUE>
+                        <SPEECH speaker="hartin-menz" expression="normal">Well, that’s all for today folks! You are well on your way to becoming fully fledged Sorcerers!</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>You feel an immense sense of achievement completing this lesson’s tasks. Even Grandmaster Hartin seems proud of you and your fellow Cadets.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" expression="excited">This is incredible! Think of all the things we can do with this knowledge in the future.</SPEECH>
+                        <SPEECH speaker="you">Yeah, I know right. It’s pretty mind blowing. I finally feel like I’m on my way to becoming a skilled Sourcerer, maybe even skilled enough to be a Steward in the near future.</SPEECH>
+                        <SPEECH speaker="pixel" expression="excited">Haha, well, let’s not get too carried away just yet. We still have much to learn.</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+        <COMPLETE_QUEST>force-calculus</COMPLETE_QUEST>
+        <COMPLETE_QUEST>force-calculus-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>
+           

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest-22.1" type="sidequest" number="22.1" dependencies="spaceship">
+    <QUEST id="find-sidequest-22.1">
+        <EFFECTS>
+            <LOCATION name="yourRoom" skin="normal">
+                <OBJECT name="booksOnFloor" skin="normal" x="???" y="???">
+                    <UNLOCK_QUEST>scanning-streams</UNLOCK_QUEST>
+                    <COMPLETE_QUEST>find-sidequest-22.1</COMPLETE_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="scanning-streams">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <NARRATION>You and Pixel are perusing the texts handed to you by Grandmaster Hartin regarding the fascinating new technology found on the Death Cube.</NARRATION>
+            <NARRATION>Behind you, jumping up and down on your bed beatboxing to himself, is Beat.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="pixel">These streams are so bizarre!</SPEECH>
+                <SPEECH speaker="pixel">They’re really powerful in that they’re literally an endless stream of power we can make use of...</SPEECH>
+                <SPEECH speaker="pixel">But that infinite nature of them makes them difficult to understand.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>Beat finally stops jumping and joins you and Pixel.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="beat">What are you guys doing?</SPEECH>
+            </DIALOGUE>
+            <POPUP>
+                <IMAGE>streamsDevice.png</IMAGE>
+                <NARRATION>You hold out the strange device in your hands for Beat to see.</NARRATION>
+            </POPUP>
+            <DIALOGUE>
+                <SPEECH speaker="beat">Ooh, cool! What does it do?</SPEECH>
+                <SPEECH speaker="pixel">We're not exactly sure ourselves. That's what we're trying to figure out now.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>Beat glances over at the text you're holding.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="beat">Looks interesting!</SPEECH>
+                <SPEECH speaker="you">Not as interesting as they are confusing...</SPEECH>
+                <SPEECH speaker="beat">So how do make sense of it?</SPEECH>
+                <SPEECH speaker="you">Well, they've provided a series of exerises in this text to help users understand how to use this device.</SPEECH>
+                <SPEECH speaker="you">But so far it hasn't been incredible enlightening...</SPEECH>
+                <SPEECH speaker="pixel">Here, what about this next exercise?</SPEECH>
+                <SPEECH speaker="pixel">We're starting to understand a bit more, maybe this will help us get a better grasp of things.</SPEECH>
+                <SPEECH speaker="you">Well, we won't know until we try. Let's start!</SPEECH>
+            </DIALOGUE>
+        </SEQUENCE>
+        <COMPLETE_QUEST>scanning-streams</COMPLETE_QUEST>
+        <EXTERNAL_ACTION name="startMission">
+            <ARGUMENT>22.1</ARGUMENT>
+        </EXTERNAL_ACTION>
+    </QUEST>
+</STORY>

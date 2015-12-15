@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-9" type="mission" number="9" dependencies="spaceship">
+    <QUEST id="cracking-the-message" helpText="Meet Pixel at the Great Hall.">
+        <EFFECTS>
+        	<LOCATION name="greatHall" skin="normal">
+        		<SEQUENCE displayOnce="true">
+        			<DIALOGUE>
+        				<SPEECH speaker="pixel" expression="normal">Hey, I wondered where you had gone!</SPEECH>
+        				<SPEECH speaker="you" audience="pixel">You were so engrossed with trying to decrypt that strange code so I thought I'd leave you to it.</SPEECH>
+        				<SPEECH speaker="pixel" audience="you">Oh, sorry, I can get a little carried away sometimes.</SPEECH>
+        				<SPEECH speaker="pixel" audience="you">So what were you up to?</SPEECH>
+        				<SPEECH speaker="you" audience="pixel">Well, I know all about RSA encryption now, and even tried my hand at decrypting it myself.</SPEECH>
+        				<SPEECH speaker="you" audience="pixel">Good thing focusing with the Source helps me compute all those complicated functions… It’s almost like there’s a computer in my head that I can code with the power of the Source!</SPEECH>
+        				<SPEECH speaker="pixel" audience="you">Of course, we all know that’s ridiculous.</SPEECH>
+        				<SPEECH speaker="you" audience="pixel">Haha, yeah, of course.</SPEECH>
+        				<SPEECH speaker="pixel" audience="you">Anyway, while you were doing all that...</SPEECH>
+        			</DIALOGUE>
+        		<POPUP>
+        			<IMAGE>strangeCodeCloseUp.png</IMAGE>
+        			<NARRATION>Look at this section of the screen.</NARRATION>
+        		</POPUP>
+        		<DIALOGUE>
+        			<SPEECH speaker="you" audience="pixel">Huh?</SPEECH>
+        			<SPEECH speaker="pixel" audience="you">This message was sent to our ship via RSA encryption. I believe these are the private and public keys of the ship. With these, I think we can crack the message!</SPEECH>
+        			<SPEECH speaker="pixel" audience="you">We can go to Grandmaster Hartin with the message, he’ll recognize our genius, then put us on the leaderboard!</SPEECH>
+        			<SPEECH speaker="you" audience="pixel">Wait, but we’ll need the sender’s public and private key, too. And we have no idea who the sender might be!</SPEECH>
+        			<SPEECH speaker="pixel" audience="you">That’s easy, I’ve already narrowed it down. We know for a fact that it must be someone in the area committing the attack and sending this message. We can ask the Steward at the Command Centre for a list of the ships in the area, then check with each of their keys.</SPEECH>
+        			<SPEECH speaker="you" audience="pixel">Well, let's head there then.</SPEECH>
+        		</DIALOGUE>
+        		<NARRATION>The two of you shovel down your lunch and head to the Command Center.</NARRATION>
+				</SEQUENCE>
+                <UNLOCK_QUEST>obtain-ships-list</UNLOCK_QUEST>
+				<OBJECT name="about" skin="strangeCode" x="1057" y="136"></OBJECT>
+        		<OBJECT name="announcements" skin="strangeCode" x="355" y="0"></OBJECT>
+        		<OBJECT name="leaderboard" skin="strangeCode" x="127" y="0"></OBJECT>
+        	</LOCATION>
+    	</EFFECTS>
+    	<SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="obtain-ships-list" helpText="Find the navigator in the Command Center.">
+    	<EFFECTS>
+    		<LOCATION name="cmdCenter" skin="strangeCode">
+    			<TEMP_OBJECT name="navigator" skin="normal" x="396" y="541">
+    				<SEQUENCE>
+    					<DIALOGUE>
+    						<SPEECH speaker="navigator" expression="bored">What do you want? This is an emergency. It better be important.</SPEECH>
+    						<SPEECH speaker="pixel" expression="serious" audience="navigator">Sir, we believe we can decrypt the message that’s being displayed in the Great Hall right now. We just need a list of the ships in the area, and their private and public keys. A proficient Sourcerer like yourself should be able to get this for us, no problem.</SPEECH>
+    					</DIALOGUE>
+    					<NARRATION>He is obviously pleased by Pixel's flattery.</NARRATION>
+    					<DIALOGUE>
+    						<SPEECH speaker="navigator" expression="normal" audience="pixel">Well, if you put it that way...</SPEECH>
+    					</DIALOGUE>
+    					<NARRATION>He turns around and fiddles with the control panel behind him, channeling Source into a port on the machine. Then, he writes some numbers in the air in front of him, using the Source.
+    					</NARRATION>
+    					<DIALOGUE>
+    						<SPEECH speaker="navigator" expression="bored" audience="pixel">This is what I have. You two better not be wasting my time...</SPEECH>
+    						<SPEECH speaker="pixel" expression="normal" audience="navigator">Of course not! Wouldn't dream of it sir.</SPEECH>
+    						<SPEECH speaker="you" audience="pixel">Now, let's get cracking!</SPEECH>
+    					</DIALOGUE>
+    				</SEQUENCE>
+    				<EXTERNAL_ACTION name="startMission">
+    					<ARGUMENT>9</ARGUMENT>
+    				</EXTERNAL_ACTION>
+    			</TEMP_OBJECT>
+                <OBJECT name="navigator" skin="normal" x="396" y="541"></OBJECT>
+    		</LOCATION>
+    	</EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="code-cracked">
+    	<EFFECTS></EFFECTS>
+    	<SEQUENCE>
+    		<LOCATION name="cmdCenter" skin="strangeCode"></LOCATION>
+            <POPUP>
+                <IMAGE>decryptedMessage.png</IMAGE>
+                <DIALOGUE>
+                <SPEECH speaker="you">This must be it!</SPEECH>
+                </DIALOGUE>
+                <NARRATION>The two of you stare at the decrypted message on your wrist device.</NARRATION>
+                <NARRATION>The message sends a shiver down everyone's spine.</NARRATION>
+            </POPUP>
+            <DIALOGUE>
+                <SPEECH speaker="pixel" expression="shocked">No... It can't be!</SPEECH>
+                <SPEECH speaker="pixel" expression="horrified">Someone’s trying to commit genocide!!</SPEECH>
+                <SPEECH speaker="pixel" expression="serious">What do they mean by “mining”, though?</SPEECH>
+            </DIALOGUE>
+            <NARRATION>Navigator "Grouch" seems horrified.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="navigator" expression="annoyed">They must mean the Source Crystals on the planet! Who is the sender of this messsage?</SPEECH>
+                <SPEECH speaker="you">Judging from which keys worked, it's a large ship somewhere in the outermost orbit of this system.</SPEECH>
+                <SPEECH speaker="you">It's only identified by a codename though: DUNGEON.</SPEECH>
+                <SPEECH speaker="navigator" expression="serious">Let me look that ship up.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>Channeling the Source into the console again, the Steward does a quick search on the name.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="navigator" expression="annoyed">Nothing... I can’t get any information about it.</SPEECH>
+                <SPEECH speaker="navigator" expression="serious">All spaceships, no matter how small, must be registered in the Common Spacefaring Vehicle Database and have a valid Certificate of Embarkation from their race’s unifying government.</SPEECH>
+                <SPEECH speaker="navigator" expression="serious">This ship... doesn’t seem to exist.</SPEECH>
+                <SPEECH speaker="you">Never mind that! Remember the message? Someone’s intending to commit genocide!</SPEECH>
+                <SPEECH speaker="navigator" expression="serious">Yes, I suppose that's more pressing.</SPEECH>
+                <SPEECH speaker="navigator" expression="serious">Planet Y… It’s largely a mystery to us, since we haven’t devoted enough resources to exploring it yet.</SPEECH>
+                <SPEECH speaker="navigator" expression="serious">That attack earlier has severely compromised our shuttle-to-ship communication systems.</SPEECH>
+                <SPEECH speaker="navigator" expression="serious">Meaning, even if we can spare the manpower to get someone planetside, they won't be able to transmit messages safely back to the mothership, because our encryption system is buggy.</SPEECH>
+                <SPEECH speaker="navigator" expression="serious">Hmm... I will have to discuss this with the Grandmasters and other Stewards to see what our best course of action is.</SPEECH>
+                <SPEECH speaker="pixel" expression="thinking">You know, if the Grandmasters are ok with it, you could let us have a crack at it.</SPEECH>
+                <SPEECH speaker="navigator" expression="serious">Your efforts are commendable. But there's really nothing more you two Cadets can do here. Let the real Sourcerers handle this.</SPEECH>
+                <SPEECH speaker="navigator" expression="serious">You should get back to your studies.</SPEECH>
+            </DIALOGUE>
+    	</SEQUENCE>
+    	<COMPLETE_QUEST>obtain-ships-list</COMPLETE_QUEST>
+    	<COMPLETE_QUEST>code-cracked</COMPLETE_QUEST>
+    </QUEST>
+</STORY>

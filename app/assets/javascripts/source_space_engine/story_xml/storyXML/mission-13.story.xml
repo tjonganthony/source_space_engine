@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-13" type="mission" number="13" dependencies="planet-y">
+    <QUEST id="investigate-alien-planet" helpText="Investigate your surroundings">
+        <EFFECTS>
+            <LOCATION name="crashSite" skin="normal">
+                <SEQUENCE>
+                    <NARRATION>While you and Pixel wait for a reply from the Academy ship, the stewards set off to look for clues in the alien forest.</NARRATION> 
+                    <LOCATION name="alienForest" skin="normal"></LOCATION>
+                    <NARRATION>Feeling a little useless, you attempt to analyse your surroundings.</NARRATION>
+                    <PAUSE>
+                         <OBJECT name="alienHouse" skin="normal" x="586" y="229">
+                            <CONTINUE></CONTINUE>
+                        </OBJECT>
+                    </PAUSE>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">Hmm there are houses in the trees here but no one’s around. I wonder if our crash landing scared them into hiding.</SPEECH>
+                        <SPEECH speaker="you">Or maybe they just went out hunting? Or...</SPEECH>
+                    </DIALOGUE>
+                    <POPUP>
+                        <IMAGE>scottieClimbingTree.png</IMAGE>
+                        <NARRATION> Before you can speculate any further, you hear some rustling sounds to your right. You turn around to see Scottie making his way up one of the trees.</NARRATION>
+                    </POPUP>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">Um, are you sure that’s ok? That’s practically breaking and entering.</SPEECH>
+                        <SPEECH speaker="scottie" expression="happy">Oh don’t worry so much. We’re just gonna take a look-see, it’s not like we’re gonna steal anything.</SPEECH>
+                        <SPEECH speaker="pixel" expression="normal">He’s pretty agile for such a big guy.</SPEECH>
+                    </DIALOGUE>
+                    <PAUSE duration="2" autocontinue="true"></PAUSE>
+                    <NARRATION>a little while later...</NARRATION>
+                    <SPEECH speaker="scottie" expression="happy">I found something! It’s a weird little device, but I think this is what they use for communication!</SPEECH>
+                    <POPUP>
+                        <IMAGE>alienTelephone.png</IMAGE>
+                        <NARRATION>It looks a lot like an ancient telephone.</NARRATION>
+                        <DIALOGUE>
+                        <SPEECH speaker="you">That tech is older than a dinosaur! My great-great-great-great-grandfather used to collect antiques which have been passed down through our family for ages. This device looks very similar to what people used to communicate with each other in the ancient days. It’s called a dial phone.</SPEECH>
+                        <SPEECH speaker="pixel" expression="surprised" audience="you">wow, I’ve never seen one of these before.</SPEECH>
+                        <SPEECH speaker="ershk" expression="excited">Kuud Grøvla! Rasshouk iv a da graker larkerr iv! Rhou vik a rak kraomvet id dla! Ec devoushk ouk elaktraks acu lav vik a kourshk ik vitt grrla.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>You stare at her blankly, uncomprehending.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="scottie" expression="happy" audience="ershk">Ahem, allow me to translate. Ershk was just explaining that she has come across such devices before in her studies of less advanced extraterrestial species. This device uses a combination of analog voice modulation, otherwise known as Plain Old Telephone Service, POTS, and Dual-Tone Multi-Frequency signalling, DTMF.</SPEECH>
+                    </DIALOGUE>
+                    </POPUP>
+                    <DIALOGUE>
+                        <SPEECH speaker="you" audience="scottie">That’s really interesting and all, but how does this help us with our objectives? Whoever it is is still out there plotting a genocide!</SPEECH>
+                        <SPEECH speaker="pixel" expression="thinking" audience='you'>Actually, if we can figure out the specifics of how this thing works, we can broadcast a communication to warn the inhabitants of this planet of the upcoming attack. Hopefully they’ll reach out to us and the Crystal order can send in a rescue fleet.</SPEECH>
+                        <SPEECH speaker="you">It beats sitting around here doing nothing. Let’s give it a go!</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                    <COMPLETE_QUEST>investigate-alien-planet</COMPLETE_QUEST>
+                    <EXTERNAL_ACTION name="startMission">
+                        <ARGUMENT>13</ARGUMENT>
+                    </EXTERNAL_ACTION>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="investigate-alien-planet-completed">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <DIALOGUE>
+                <SPEECH speaker="you">I think it’s working! Do you think we’ll get a reply?</SPEECH>
+                <SPEECH speaker="pixel" expression="serious">I hope so, for their sake. It will probably take them some time to respond though. Ershk here has translated the message into every alien language she knows. Hopefully, there’s one in there they can understand.</SPEECH>
+                <SPEECH speaker="you">Speaking of which, how come Ershk knows so many languages, but she doesn’t seem to speak Standard English?</SPEECH>
+                <SPEECH speaker="scottie" expression="happy">Well, you see, Ershk is Grrashkøn-ian. And the way her species’ vocal chords are built makes it almost impossible for her to pronounce the Standard English you humans speak. She understands the language perfectly well though.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>The conversation is interrupted by a crackling of static on the receiver. After some tuning, the static clears up, and you hear an alien voice...</NARRATION>
+        </SEQUENCE>
+        <COMPLETE_QUEST>investigate-alien-planet-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>
+           

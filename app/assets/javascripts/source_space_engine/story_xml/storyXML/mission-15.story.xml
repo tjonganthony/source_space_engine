@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-15" type="mission" number="15" dependencies="planet-y spaceship">
+    <QUEST id="magical-tone-matrix">
+        <EFFECTS>
+            <LOCATION name="alienForest" skin="normal">
+                <SEQUENCE>
+                    <DIALOGUE>
+                        <SPEECH speaker="scottie" expression="happy" audience="chieftain-clef">Alright, I've just heard back from the Academy. The Crystal Order is mobilising their emergency response fleet. They should be here within the day.</SPEECH>
+                        <SPEECH speaker="chieftain-clef" expression="serious" audience="scottie">We can’t just stand around and wait, we need to warn the rest of the the planet too! We’re only a small remote village. There are larger concentrations of Trebbls in other regions of our planet.</SPEECH>
+                        <SPEECH speaker="you" audience="chieftain-clef">But how do we do that? We can't possibly travel across the entire planet in less than a day!</SPEECH>
+                        <SPEECH speaker="chieftain-clef" expression="serious" audience="you">Nor will you need to. We Trebbls have a our own method of mass communication, called the magical tone matrix. It is a collective song sung by our people to rally everyone in times of danger. It has only been used once in the history of our species, during the Great Migration at the end of the First Age.</SPEECH>
+                        <SPEECH speaker="chieftain-clef" expression="serious" audience="you">You may have noticed that our atmosphere is unique. It is able to carry sound waves of a certain frequency over a very long distance. It is a special frequency that can only be produced by a Trebbl.</SPEECH>
+                        <SPEECH speaker="pixel" expression="excited" audience="chieftain-clef">That’s pretty amazing.</SPEECH>
+                        <SPEECH speaker="chieftain-clef" expression="serious" audience="pixel">Yes but, sadly after the Great Migration, we Trebbls have spread further apart throughout the planet, our voices alone can no longer reach the entire population! And that’s where I need your help: if we can somehow build a device that can amplify our voice, we will be able to reach even Trebbls at the furthest end of this planet.</SPEECH>
+                        <SPEECH speaker="pixel" expression="normal">Right! We should be able to gather enough parts from the village to build something that works.</SPEECH>
+                        <SPEECH speaker="you">Let’s get going. We don’t know how much time we have left.</SPEECH>
+                        <SPEECH speaker="scottie" expression="happy">There are more of those tree houses over there. I’ll go scavenge while you kids figure it out.</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <EXTERNAL_ACTION name="startMission">
+                    <ARGUMENT>15</ARGUMENT>
+                </EXTERNAL_ACTION>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="return-to-the-academy">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="alienForest" skin="normal"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">Ok, I think this should work.</SPEECH>
+                <SPEECH speaker="pixel">Well, Chieftain Clef, now it's your turn.</SPEECH>
+            </DIALOGUE>
+            <POPUP>
+                <IMAGE>singingCircle.png</IMAGE>
+                <NARRATION>The Chieftain gathered the rest of his clan around the device you have built. Following his lead, the Trebbls began singing in a strange low tone that resonated across the entire forest and beyond. The sound slowly grew more intense as more Trebbls join in the song. After what seemed like ages, the Chieftain and his clan stopped, and the sound faded away as it traveled our further.</NARRATION>
+            </POPUP>
+            <PAUSE duration="1" autocontinue="true"></PAUSE>
+            <LOCATION name="crashSite" skin="normal"></LOCATION>
+            <NARRATION>That night, the emergency response fleet from the Crystal Order arrived. As they set to work preparing for the imminent attack, one of the pilots offered to give you and your comrades a lift back to the Academy.</NARRATION>
+            <NARRATION>As you were preparing to leave, you felt someone tug at your boots. You look down to see a young Trebbl staring up at you, with an earnest look in his eyes.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="beat" expression="normal">Hey, do you have room for one more? I don’t need a lot of space.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>He was carrying a large backpack and what looked like a map.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="you" audience="beat">Um... I'm not so sure about this...</SPEECH>
+                <SPEECH speaker="beat" expression="pleading" audience="you">Pleeease?</SPEECH>
+                <SPEECH speaker="beat" expression="pleading" audience="you">I want to see what’s out there! My dad was an astronomer! He told me all about the stars and how we will find a way to travel to space and discover new worlds one day.</SPEECH>
+                <SPEECH speaker="beat" expression="happy" audience="you">Maybe, if I go with you, I can learn to be an astronaut!</SPEECH>
+                <SPEECH speaker="pixel" expression="excited" audience="beat">Oh he’s so adorable! Come on, I’m sure we can make room! The Source Academy ship is so big after all.</SPEECH>
+                <SPEECH speaker="scottie" expression="happy" audience="beat">Yeah, I don’t see what’s wrong with that! He’s such a cute little fellow. What’s your name?</SPEECH>
+                <SPEECH speaker="beat" expression="happy">Yay! You guys are the awesomest!! My name is Bʍ ⊙yʃ tʃ̆ ^ʃt̚vd̚, pleased to meet you!</SPEECH>
+                <SPEECH speaker="you">Did he just beatbox?</SPEECH>
+                <SPEECH speaker="pixel" expression="excited" audience="you">That's it! We'll call him Beat!</SPEECH>
+            </DIALOGUE>
+            <LOCATION name="planet-y-orbit" skin="leaving"></LOCATION>
+            <NARRATION>The Trebbl had his face plastered to the window of the transport shuttle during the whole ascent up to the Source academy.</NARRATION>
+            <NARRATION>Good thing the ride this time was smooth.</NARRATION>
+            <POPUP>
+                <IMAGE>sourceAcademy.png</IMAGE>
+                <NARRATION>Back at the Academy, after going through a short debrief with the Grandmasters, and much adoration over the cuteness of our new companion, you and Pixel were praised for your efforts and instructed to get some rest. To which, you gladly obliged.</NARRATION>
+            </POPUP>
+            <LOCATION name="yourRoom" skin="dim">
+                <OBJECT name="door" skin="yourRoom-dim" x="831" y="270"></OBJECT>
+                <OBJECT name="yourNoticeBoard" skin="dim" x="1083" y="287"></OBJECT>
+                <OBJECT name="yourBag" skin="dim" x="126" y="735"></OBJECT>
+                <OBJECT name="yourCabinet" skin="dim" x="0" y="0"></OBJECT>
+                <OBJECT name="yourTablet" skin="dim" x="1446" y="475"></OBJECT>
+                <OBJECT name="yourTextbook" skin="dim" x="1346" y="427"></OBJECT>
+            </LOCATION>
+            <NARRATION>Sinking your head into the soft pillow, it wasn't long before you drift off into deep sleep...</NARRATION>
+
+        </SEQUENCE>
+        <COMPLETE_QUEST>magical-tone-matrix</COMPLETE_QUEST>
+        <COMPLETE_QUEST>return-to-the-academy</COMPLETE_QUEST>
+    </QUEST>
+</STORY>
+           

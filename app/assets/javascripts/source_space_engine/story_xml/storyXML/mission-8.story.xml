@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-8" type="mission" number="8" dependencies="spaceship">
+    <QUEST id="strange-code">
+        <EFFECTS>
+        	<LOCATION name="greatHall" skin="normal">
+        		<SEQUENCE>
+        			<NARRATION>Upon stepping into the Great Hall, you notice that the monitors that usually show school announcements and the leaderboard are covered in an ominous, strange foreign language.</NARRATION>
+					<NARRATION>The students who walk in behind you are immediately hushed.</NARRATION>
+					<NARRATION>Everyone gazes upon the displays with apprehension.</NARRATION>
+					<NARRATION>An announcement blasts through the system and you recognize the voice of Grandmaster Hartin Menz.</NARRATION>
+					<DIALOGUE>
+						<SPEECH speaker="hartin-menz" expression="worried">Attention, students. What you are seeing in the Great Hall now is the result of an attack on the ship’s Source-powered equipment.</SPEECH>
+						<SPEECH speaker="hartin-menz" expression="worried">We have been transmitted an undecipherable message from somewhere in the area. We cannot determine its exact location, because our navigation systems have been jammed by the attack as well.
+						Me, Lok-Kim and the Stewards are working to get our systems up and running again.</SPEECH>
+						<SPEECH speaker="hartin-menz" expression="worried">Students who can offer any assistance on these issues we are having may come to my office for a meeting.</SPEECH>
+						<SPEECH speaker="hartin-menz" expression="worried">In the meantime, do not panic.</SPEECH>
+					</DIALOGUE>
+					<NARRATION>The broadcast ends. The Great Hall is silent.</NARRATION>
+					<DIALOGUE>
+						<SPEECH speaker="you">Wow... This sounds serious.</SPEECH>
+						<SPEECH speaker="pixel" expression="serious">Yeah, I thought school life here would be uneventful. What do you think about those symbols on the screen?</SPEECH>
+						<SPEECH speaker="you">It’s some kind of alien language, I think. Unfortunately, I only speak Klingon.</SPEECH>
+						<SPEECH speaker="pixel" expression="normal">Well, I think it’s some kind of code. I’ve been into cryptography for a while. You might consider me an expert, even.</SPEECH>
+					</DIALOGUE>
+					<NARRATION>She seems proud of herself for saying that.</NARRATION>
+					<DIALOGUE>
+						<SPEECH speaker="pixel" expression="normal">Do you want to know more about cryptography?</SPEECH>
+					</DIALOGUE>
+					<NARRATION>She looks at you eagerly</NARRATION>
+					<DIALOGUE>
+						<SPEECH speaker="you">Um, sure. It's good to learn new things, I guess?</SPEECH>
+						<SPEECH speaker="pixel" expression="excited">OK, let’s learn about RSA encryption!</SPEECH>
+						<SPEECH speaker="you">...what?</SPEECH>
+					</DIALOGUE>
+				</SEQUENCE>
+				<EXTERNAL_ACTION name="startMission">
+					<ARGUMENT>8</ARGUMENT>
+				</EXTERNAL_ACTION>
+				<OBJECT name="about" skin="strangeCode" x="1057" y="136"></OBJECT>
+        		<OBJECT name="announcements" skin="strangeCode" x="355" y="0"></OBJECT>
+        		<OBJECT name="leaderboard" skin="strangeCode" x="127" y="0"></OBJECT>
+        	</LOCATION>
+    	</EFFECTS>
+    	<SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="strange-code-completed">
+    	<EFFECTS></EFFECTS>
+    	<SEQUENCE>
+    		<LOCATION name="greatHall" skin="normal"></LOCATION>
+    		<DIALOGUE>
+    			<SPEECH speaker="you">Well, I think I'm sorta getting a hang of it!</SPEECH>
+    		</DIALOGUE>
+    		<NARRATION>There was no reply from Pixel. You look over at her and find her concentrating intently on the screen of her wrist device, trying to make sense of the strange code. Perhaps it's best not to bother her at the moment.</NARRATION>
+    		<DIALOGUE>
+    			<SPEECH speaker="you">I'll just practice more on my RSA encryption for the time being then!</SPEECH>
+    		</DIALOGUE>
+    	</SEQUENCE>
+    	<COMPLETE_QUEST>strange-code</COMPLETE_QUEST>
+    	<COMPLETE_QUEST>strange-code-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>

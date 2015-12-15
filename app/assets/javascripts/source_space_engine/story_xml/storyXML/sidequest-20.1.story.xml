@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest-20.1" type="sidequest" number="20.1" dependencies="spaceship">
+    <QUEST id="find-sidequest-20.1">
+        <EFFECTS>
+            <LOCATION name="HMoffice" skin="normal">
+                <OBJECT name="hartin-menz" skin="officeSitting" x="754" y="201">
+                    <UNLOCK_QUEST>force-regeneration</UNLOCK_QUEST>
+                    <COMPLETE_QUEST>find-sidequest-20.1</COMPLETE_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="force-regeneration">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <NARRATION>After the defeat of the Rogue Grandmaster, Grandmaster Hartin summons you and Pixel to his office.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="hartin" expression="normal">On the Rogue Grandmaster’s ship, we found curious new technology.</SPEECH>
+                <SPEECH speaker="hartin" expression="normal">It turns out, he discovered how to access hidden streams of the Source.</SPEECH>
+                <SPEECH speaker="hartin" expression="normal">Harnessing these powers could prove useful for us and it may shed light on how he was able to control the minds of his subordinates.</SPEECH>
+                <SPEECH speaker="hartin" expression="normal">Right now, we need to repair much of our ship, after the battle.</SPEECH>
+                <SPEECH speaker="hartin" expression="normal">Since the two of you played such an instrumental role in our success, we would like to invite you to learn and assist in the development of this power.</SPEECH>
+            </DIALOGUE>
+            <POPUP>
+                <IMAGE>streamsDevice.png</IMAGE>
+                <NARRATION>He handed over a thin rectangular piece of device, small enough to fit into the palm of your hands.</NARRATION>
+            </POPUP>
+            <NARRATION>You and Pixel starred at the device in awe.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="pixel" expression="excited">Wow... it's like nothing I've ever seen before.</SPEECH>
+                <SPEECH speaker="you">Fascinating!</SPEECH>
+                <SPEECH speaker="you">You can leave it to us Grandmaster! We'll learn all we can from this device.</SPEECH>
+                <SPEECH speaker="hartin" expression="happy">Fantastic. Here, these texts were found in the Death Cube's archives. It includes some documentations of the new technology. They should help you in your learning.</SPEECH>
+                <SPEECH speaker="you">We're on it!</SPEECH>
+            </DIALOGUE>
+        </SEQUENCE>
+        <COMPLETE_QUEST>force-regeneration</COMPLETE_QUEST>
+        <EXTERNAL_ACTION name="startMission">
+            <ARGUMENT>20.1</ARGUMENT>
+        </EXTERNAL_ACTION>
+    </QUEST>
+</STORY>

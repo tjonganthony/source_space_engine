@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-5" type="mission" number="5" dependencies="spaceship">
+    <QUEST id="crypto" helpText="Class is about to start.">
+        <EFFECTS>
+            <LOCATION name="yourRoom" skin="normal">
+                <SEQUENCE displayOnce="true">
+                    <NARRATION>You were sitting on your space invader carpet, immersed in your favourite book, when your wrist device started beeping.</NARRATION>
+                    <NARRATION>It was a message from Grandmaster Lok-Kim: "Greetings Cadets! Let's continue our lesson and move on to more exciting trainings! See you in the classroom in 5 minutes!"</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="you"> Sigh. Just when I was getting to the exciting part...</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>Reluctantly, you packed up your things and made for the classroom.</NARRATION>
+                </SEQUENCE>
+            </LOCATION>
+            <LOCATION name="classroom" skin="classOn">
+                <SEQUENCE displayOnce="true">
+                    <DIALOGUE>
+                        <SPEECH speaker="lok-kim" expression="happy">I see you're all back! And in relatively better spirits it seems!</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="happy">Wonderful! Now, watch me carefully.</SPEECH>
+                    </DIALOGUE>
+                    <POPUP>
+                        <IMAGE>glowingLine.png</IMAGE>
+                        <NARRATION>He traces a glowing line in front of him. It rotates slowly, growing larger and smaller.</NARRATION>
+                    </POPUP>
+                    <DIALOGUE>
+                        <SPEECH speaker="lok-kim">We don’t learn how to control the Source just to draw static lines!</SPEECH>
+                        <SPEECH speaker="lok-kim">You will have to transform them into something you could possibly use.</SPEECH>
+                        <SPEECH speaker="lok-kim">Once you get good at this kind of thing, you won’t need to ever use your tablets to draw diagrams to illustrate a complicated Source concept.</SPEECH>
+                        <SPEECH speaker="you" audience="lok-kim">Well, I don’t think I’d ever be teaching anyone anything to do with the Source...</SPEECH>
+                        <SPEECH speaker="lok-kim" audience="you">You’d never believe it, but some places have locks that can only be unlocked with these Source objects.</SPEECH>
+                        <SPEECH speaker="lok-kim" audience="you">Only Sourcerers can unlock them, but of course you need to be more than just a good Sourcerer.</SPEECH>
+                        <SPEECH speaker="lok-kim" audience="you">They’re usually encoded, so you need cryptographic training as well.</SPEECH>
+                        <SPEECH speaker="lok-kim" audience="you">Back in the day, I encountered one of those doors…</SPEECH>
+                        <SPEECH speaker="pixel" expression="unimpressed">Oh man... This must be one of his infamous long stories.</SPEECH>
+                        <SPEECH speaker="pixel" expression="unimpressed">Lok-Kim is notorious for going off on a tangent in his classes.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>The student seated beside you turns to face you, evidently bored.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">Um...</SPEECH>
+                        <SPEECH speaker="pixel" expression="normal" audience="you">Oh, I haven’t introduced myself.</SPEECH>
+                        <SPEECH speaker="pixel" expression="happy" audience="you">I’m Pixel. I'm a new cadet as well. Nice to meet you.</SPEECH>
+                        <SPEECH speaker="you" audience="pixel">I’m [player name]. Nice to meet you too.</SPEECH>
+                        <SPEECH speaker="lok-kim">... and that was when I realized that it was all just a dream!</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="happy">It was fascinating!</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="worried">Oh, look at the time.</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="worried">You’ve only got a few more minutes left to complete the rest!</SPEECH>
+                        <SPEECH speaker="lok-kim" expression="normal">I trust you all can finish?</SPEECH>
+                        <SPEECH speaker="pixel" expression="horrified">Whoa! There’s no way!</SPEECH>
+                        <SPEECH speaker="you" audience="pixel">I know, right?</SPEECH>
+                        <SPEECH speaker="pixel" expression="serious" audience="you">We just have to try...</SPEECH>
+                        <SPEECH speaker="pixel" expression="surprised" audience="you">Look, someone’s almost finished!</SPEECH>
+                        <SPEECH speaker="pixel" expression="normal" audience="you">They’re surely going on the leaderboard later.</SPEECH>
+                        <SPEECH speaker="you" audience="pixel">The leaderboard?</SPEECH>
+                        <SPEECH speaker="pixel" expression="surprised" audience="you">You haven’t heard of it? Let me show you later.</SPEECH>
+                        <SPEECH speaker="pixel" expression="normal" audience="you">But first...we should get to work</SPEECH>
+                    </DIALOGUE>
+                    <PAUSE>
+                        <OBJECT name="classHolo" skin="glowingLine" x="709" y="144">
+                            <CONTINUE></CONTINUE> 
+                        </OBJECT>
+                    </PAUSE>
+                </SEQUENCE>
+                <EXTERNAL_ACTION name="startMission">
+                    <ARGUMENT>5</ARGUMENT>
+                </EXTERNAL_ACTION>
+                <OBJECT name="classHolo" skin="glowingLine" x="709" y="144"></OBJECT>
+                <OBJECT name="lok-kim" skin="classroom" x="184" y="235"></OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="crypto-completed">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="classroom" skin="classOn"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">That… was the longest five minutes of my life.</SPEECH>
+                <SPEECH speaker="pixel" audience="you">At least we completed it on time!</SPEECH>
+                <SPEECH speaker="pixel" audience="you">That means we don’t get a penalty for lateness.</SPEECH>
+                <SPEECH speaker="pixel" audience="you">They seem to really care a lot about punctuality in this class…</SPEECH>
+                <SPEECH speaker="pixel" audience="you">Though I heard you can always ask one of the Master Sourcerers or their Stewards, if you need assistance.</SPEECH>
+                <SPEECH speaker="you" audience="pixel">I feel a little drained though.</SPEECH>
+                <SPEECH speaker="you" audience="pixel">I haven’t used the Source this intensively since I learned how.</SPEECH>
+                <SPEECH speaker="pixel" audience="you">I get what you mean. I'm so hungry now!</SPEECH>
+                <SPEECH speaker="lok-kim">Let’s call it a day, class.</SPEECH>
+                <SPEECH speaker="lok-kim">Unless you want to hear another one of my stories – in which case I’d be glad to oblige...</SPEECH>
+            </DIALOGUE>
+            <NARRATION>The class hastily stands up and heads for the door.</NARRATION>
+            <NARRATION>You and Pixel follow suit.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="pixel">Come on, I'm famished!</SPEECH>
+                <SPEECH speaker="pixel" expression="excited">Let’s head to the Great Hall.</SPEECH>
+            </DIALOGUE>
+            <LOCATION name="greatHall" skin="normal"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="pixel">You see that screen up there?</SPEECH>
+                <SPEECH speaker="pixel">That’s what I was talking about just now – the leaderboard.</SPEECH>
+                <SPEECH speaker="pixel">Only the best of the best get to have their name up there.</SPEECH>
+                <SPEECH speaker="you">They must be really smart!</SPEECH>
+                <SPEECH speaker="pixel">Or just really hardworking.</SPEECH>
+                <SPEECH speaker="pixel">Anyway, I'm starving. Let’s eat!</SPEECH>
+            </DIALOGUE>
+            <NARRATION>The rest of the day passes with little incident.</NARRATION>
+            <NARRATION>You find out more about Pixel’s life.</NARRATION>
+            <NARRATION>Unlike Earth-born yourself, she was born in a colony off-world, and seems much more knowledgeable than you about alien life.</NARRATION>
+            <NARRATION>It looks like you’ve made your first friend at Source Academy.</NARRATION>
+            <NARRATION>Hopefully, you make a few more.</NARRATION>
+        </SEQUENCE>
+        <COMPLETE_QUEST>crypto</COMPLETE_QUEST>
+        <COMPLETE_QUEST>crypto-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>

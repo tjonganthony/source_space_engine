@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest-17.1" type="sidequest" number="17.1" dependencies="spaceship">
+    <QUEST id="find-sidequest-17.1">
+        <EFFECTS>
+            <LOCATION name="classroom" skin="normal">
+                <OBJECT name="trainingRoomConsole" skin="normal" x="???" y="???">
+                    <UNLOCK_QUEST>object-simulation</UNLOCK_QUEST>
+                    <COMPLETE_QUEST>find-sidequest-17.1</COMPLETE_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="object-simulation">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="classroom" skin="normal"></LOCATION>
+            <NARRATION>After your lunch break, you and Pixel decide to go to the classroom for extra practice.</NARRATION>
+            <NARRATION>Walking into what you assumed was an empty classroom, you were surprised to find Navigator 'Grouch' in the far corner of the room, hunched over a console.</NARRATION>
+            <NARRATION>He was muttering angrily to himself as he worked, looking as if the console had offended him.</NARRATION>
+            <NARRATION>You decide, against your better judgement, to go check out what he was doing.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">What are you doing?</SPEECH>
+                <SPEECH speaker="navigator" expression="annoyed">What does it look like I'm doing?</SPEECH>
+                <SPEECH speaker="you">Destroying the console with your aggressive typing?</SPEECH>
+            </DIALOGUE>
+            <NARRATION>He looks unimpressed by your smartass comment. If anything it seems to have further aggravated his typing.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="navigator" expression="annoyed">Ugh. The Grandmasters have requested that I upgrade the simulators to assist your training for the upcoming battle.</SPEECH>
+                <SPEECH speaker="navigator" expression="annoyed">But it's taking so long and I have a million other more pressing matters to attend to.</SPEECH>
+                <SPEECH speaker="pixel" expression="normal">Well, maybe we can help you with that.</SPEECH>
+                <SPEECH speaker="navigator" expression="bored">Don't be ridiculous. Constructing objects with the Source is complicated and requires a certain sensitivity to the Source way beyond your current level.</SPEECH>
+                <SPEECH speaker="pixel" expression="confused">What do you mean? We already know this! Grandmaster Lok-Kim has taught us well.</SPEECH>
+                <SPEECH speaker="pixel" expression="happy">I almost got an A for that class!</SPEECH>
+            </DIALOGUE>
+            <NARRATION>The navigator rolled his eyes at Pixel.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="navigator" expression="annoyed">Those are two completely different things!</SPEECH>
+                <SPEECH speaker="navigator" expression="annoyed">The objects you created in Grandmaster Lok-Kim’s class, were merely sketches of reality.</SPEECH>
+                <SPEECH speaker="you">That’s true. The things we drew in the air were just pretty glowing lines.</SPEECH>
+                <SPEECH speaker="pixel" expression="excited">Oh, wait! I remember now! I've read about this before!</SPEECH>
+                <SPEECH speaker="pixel" expression="excited">What you're doing creates functional objects that are barely distinguishable from what they are actually based on!</SPEECH>
+                <SPEECH speaker="pixel" expression="excited">And you have to define their properties very specifically for it to work well.</SPEECH>
+                <SPEECH speaker="navigator" expression="bored">Impressive. You actually read books.</SPEECH>
+                <SPEECH speaker="pixel" expression="happy">You know, if you're really busy, we can help you with this.</SPEECH>
+                <SPEECH speaker="navigator" expression="bored">Nonsense. We need highly accurate simulations of reality for your trainings if you Cadets are to have any hope of defeating our enemies.</SPEECH>
+                <SPEECH speaker="navigator" expression="bored">For that this needs to be done by an expert, not a bunch of amateurs like you.</SPEECH>
+                <SPEECH speaker="pixel" expression="happy">Oh come on, how hard can it be? Just run through the basics with us, then you can leave us to it and get back to the million other pressing things you have to do.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>The navigator looked skeptical.</NARRATION>
+            <NARRATION>You try appealing to his ego.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">Yeah, I'm sure with instructions from a skilled expert such as yourself, even amateurs like us can get it right.</SPEECH>
+                <SPEECH speaker="navigator" expression="bored">Oh, alright. Fine. But you'd better not screw this up.</SPEECH>
+            </DIALOGUE>
+            <COMPLETE_QUEST>object-simulation</COMPLETE_QUEST>
+            <EXTERNAL_ACTION name="startMission">
+                <ARGUMENT>17.1</ARGUMENT>
+            </EXTERNAL_ACTION>
+        </SEQUENCE>
+    </QUEST>
+</STORY>

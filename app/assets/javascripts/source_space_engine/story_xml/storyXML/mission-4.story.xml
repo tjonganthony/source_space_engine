@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-4" type="mission" number="4" dependencies="spaceship">
+    <QUEST id="wave-reading-101" helptext="Go to the classroom">
+        <EFFECTS>
+            <LOCATION name="classroom" skin="classOn">
+                <SEQUENCE>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">Wow...What is this?</SPEECH>
+                    </DIALOGUE>
+                    <POPUP>
+                        <IMAGE>complicatedMathFunctions.png</IMAGE>
+                        <NARRATION>The classroom this time is neat, but a holographic display is suspended in front of the class. On it are complicated numbers and functions, with symbols you barely recognize.</NARRATION>
+                    </POPUP>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">Is this really a class coded "101"?!</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>You check the electronic display on the classroom door to be sure, but you're not wrong at all.</NARRATION>
+                    <NARRATION>This is affirmed by the expressions on the rest of your classmates – all of them seem similarly confused.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="lok-kim" expression="happy">Welcome, class!</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>You swivel around to see the Academy’s second Grandmaster - Grandmaster Lok-Kim Wol, enter the room.</NARRATION>
+                    <NARRATION>Like GrandmasterHartin Menz, as a member of the Crystal Order, he deals primarily with academic aspects of the Source and its uses.</NARRATION>
+                    <NARRATION>The last you’ve heard, is that he engineered a way to make portable weapons that only Sourcerers can use.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="you">What were they called again...? Source-sabers…?</SPEECH>
+                        <SPEECH speaker="lok-kim">All of you are looking a little lost</SPEECH>
+                        <SPEECH speaker="lok-kim">Don’t worry. What you’re looking at is more advanced stuff.</SPEECH>
+                        <SPEECH speaker="lok-kim" expresssion="happy">We’ll be dealing with something much simpler.</SPEECH>
+                        <SPEECH speaker="lok-kim" expresssion="happy">Using waves of Source, you guys can form images in the physical world.</SPEECH>
+                        <SPEECH speaker="lok-kim" expresssion="happy">Today, we will try making basic 2D objects.</SPEECH>
+                    </DIALOGUE>
+                    <POPUP>
+                        <IMAGE>glowingCircle.png</IMAGE>
+                        <NARRATION>He waves his hands in front of him. A glowing line appears and forms itself into a bright circle.</NARRATION>
+                        <NARRATION>The class is in awe.</NARRATION>
+                    </POPUP>
+                    <DIALOGUE>
+                         <SPEECH speaker="lok-kim" expression="normal">We'll start with lines and shapes - these are all you need to start making more complicated things.</SPEECH>
+                    </DIALOGUE>
+                    <NARRATION>Instructions for how to begin flash across your screen. The class seems eager to begin, if a bit wary.</NARRATION>
+                    <DIALOGUE>
+                         <SPEECH speaker="you">All right, time to try this out.</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <EXTERNAL_ACTION name="startMission">
+                    <ARGUMENT>4</ARGUMENT>
+                </EXTERNAL_ACTION>
+                <OBJECT name="lok-kim" skin="classroom" x="184" y="234"></OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="wave-reading-101-completed">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="classroom" skin="classOn"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">That was simple enough. What's next?</SPEECH>
+                <SPEECH speaker="lok-kim" expression="happy">Good job, class! I can see some of you as future Master Sourcerers.</SPEECH>
+                <SPEECH speaker="lok-kim" expression="happy">We have some extra time. Since you cadets have been working so hard, let's have a break shall we?</SPEECH>
+            </DIALOGUE>
+        </SEQUENCE>
+        <COMPLETE_QUEST>wave-reading-101</COMPLETE_QUEST>
+        <COMPLETE_QUEST>wave-reading-101-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest7.1" type="sidequest" number="7.1" dependencies="spaceship">
+    <QUEST id="find-sidequest7.1">
+        <EFFECTS>
+            <LOCATION name="yourRoom" skin="normal">
+                <OBJECT name="headPhones" x="???" y="???">
+                    <UNLOCK_MISSION>echoes-of-time</UNLOCK_MISSION>
+                    <COMPLETE_QUEST>find-sidequest7.1</COMPLETE_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="echoes-of-time">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="yourRoom" skin="normal"></LOCATION>
+            <NARRATION>One day, as you sat at your table listening to your favourite tunes on the galactic radio station of Planet Gazorpazorp, you hear an exciting announcemnet.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="radio-station-announcer">- and finally tonight, we have an exciting announcement!</SPEECH>
+                <SPEECH speaker="radio-station-announcer">We're proud to bring you our much anticipated annual galactic music competition!</SPEECH>
+                <SPEECH speaker="radio-station-announcer">That's right! It's that time of the year again! So get your creative juices flowing and make some music!</SPEECH>
+                <SPEECH speaker="radio-station-announcer">The search for the most beautiful melody in the galaxy last until the next galactice month.</SPEECH>
+                <SPEECH speaker="radio-station-announcer">There are attractive prizes to be won, not to mention eternal fame, so look us up on the Cloud to find out how to participate!</SPEECH>
+                <SPEECH speaker="you" mode="thought">Omg, I have to enter this contest. I've always wanted to be galactic music icon!</SPEECH>
+            </DIALOGUE>
+            <NARRATION>You decide that before you start recording, you would first need a room with acoustics worthy enough of your masterpieces.</NARRATION>
+            <NARRATION>You immediately set to work trying to figure out how best to configure your room, to achieve the acoustics your desire.</NARRATION>
+            <COMPLETE_MISSION>echoes-of-time</COMPLETE_MISSION>
+            <EXTERNAL_ACTION name="startMission">
+                <ARGUMENT>7.1</ARGUMENT>
+            </EXTERNAL_ACTION>
+        </SEQUENCE>
+    </QUEST>
+</STORY>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest-19.1" type="sidequest" number="19.1" dependencies="spaceship">
+    <QUEST id="find-sidequest-19.1">
+        <EFFECTS>
+            <LOCATION name="greatHall" skin="normal">
+                <OBJECT name="trayOfFood" skin="normal" x="???" y="???">
+                    <UNLOCK_QUEST>multiple-headaches</UNLOCK_QUEST>
+                    <COMPLETE_QUEST>find-sidequest-19.1</COMPLETE_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="multiple-headaches">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <NARRATION>In the middle of an uncharacteristically silent dinner, the center stage lights up and projects a larger than life hologram of Grandmaster Hartin, who has a somber expression on his face.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="hartin" expression="worried">Cadets – I regret to inform you that the Rogue Grandmaster has begun his assault on some of our reconnaissance vehicles.</SPEECH>
+                <SPEECH speaker="hartin" expression="worried">As such, we will need to hasten our attack on the Deathcube.</SPEECH>
+                <SPEECH speaker="hartin" expression="worried">As [TA name] has taught many of you in his Object Simulation class, we will need to design simulations of the interior of that ship in order to carry out a successful mission.</SPEECH>
+                <SPEECH speaker="hartin" expression="worried">We want to harness the power of having a large amount of Cadets – and very intelligent ones, I may add – to find the best possible course of action in this scenario.</SPEECH>
+                <SPEECH speaker="hartin" expression="worried">Whoever comes up with the best working assault pattern, will have their design used during our real assault.</SPEECH>
+                <SPEECH speaker="hartin" expression="worried">This is serious, Cadets. We need all the help you can provide.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>With that, the hologram disappeared.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="pixel" expression="surprised">...Wow.</SPEECH>
+                <SPEECH speaker="you">Sounds like they're putting a lot of faith in us.</SPEECH>
+                <SPEECH speaker="you">We can't let them down!</SPEECH>
+                <SPEECH speaker="pixel">Yeah.</SPEECH>
+                <SPEECH speaker="pixel">Come on! Let's quickly head to the classroom after this to start working on the problem.</SPEECH>
+                <SPEECH speaker="pixel">Who knows, they might even choose one of ours!</SPEECH>
+                <SPEECH speaker="you">Then we should put in our best effort!</SPEECH>
+            </DIALOGUE>
+            <NARRATION>The two of you swiftly finish your meal and hurry down to the classrooms, already thinking of what you might put in your simulations...</NARRATION>
+        </SEQUENCE>
+        <COMPLETE_QUEST>multiple-headaches</COMPLETE_QUEST>
+        <EXTERNAL_ACTION name="startMission">
+            <ARGUMENT>19.1</ARGUMENT>
+        </EXTERNAL_ACTION>
+    </QUEST>
+</STORY>

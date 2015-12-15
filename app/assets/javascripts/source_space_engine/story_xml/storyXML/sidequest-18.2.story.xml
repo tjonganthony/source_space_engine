@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest-18.2" type="sidequest" number="18.2" dependencies="spaceship">
+    <QUEST id="find-sidequest-18.2">
+        <EFFECTS>
+            <LOCATION name="yourRoom" skin="normal">
+                <OBJECT name="bed" skin="normal" x="???" y="???">
+                    <UNLOCK_QUEST>object-simulation-2</UNLOCK_QUEST>
+                    <COMPLETE_QUEST>find-sidequest-18.2</COMPLETE_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="object-simulation-2">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="yourRoom" skin="dim"></LOCATION>
+            <NARRATION>After being put through the wringer by Scottie the whole afternoon, you retired to your room for a quick nap before training starts again.</NARRATION>
+            <NARRATION>You were almost dozing off when there was an urgent knock on your door.</NARRATION>
+            <NARRATION>Unwilling to get up, you continued sleeping.</NARRATION>
+            <NARRATION>After a few more knocks, an impatient Pixel comes bursting into your room.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="pixel" expression="serious">Quick, get up!</SPEECH>
+                <SPEECH speaker="you">Wha...? Go ‘way, lemme sleep...</SPEECH>
+                <SPEECH speaker="pixel" expression="serious">It's the simulator! I think we made some mistakes during the upgrade. It's not really generating those highly accurate simulations that we were expecting.</SPEECH>
+           </DIALOGUE>
+           <NARRATION>Your overworked and very sleepy brain struggles to process what Pixel was saying.</NARRATION>
+           <DIALOGUE>
+                <SPEECH speaker="you">Hmm? Wha- what's wrong with it?</SPEECH>
+                <SPEECH speaker="pixel" expression="serious">Come on, I'll show you.</SPEECH>
+                <SPEECH speaker="pixel" expression="serious">We really need to fix it before Navigator 'Grouch' finds out about it. His smugness would be intolerable.</SPEECH>
+           </DIALOGUE>
+           <NARRATION>Reluctantly, you get out of bed and followed her to the classroom.</NARRATION>
+           <LOCATION name="classroom" skin="normal"></LOCATION>
+           <NARRATION>At the console, Pixel activates the simulator.</NARRATION>
+           <POPUP>
+                <IMAGE>pixelated-deathCube.png</IMAGE>
+                <NARRATION>The simulator attempts to construct an object in the space in front of you.</NARRATION>
+           </POPUP>
+           <DIALOGUE>
+                <SPEECH speaker="you">Oh, that's not very good...</SPEECH>
+                <SPEECH speaker="pixel" expression="serious">Yeah, no shit. Any ideas why it might've turned out like this?</SPEECH>
+                <SPEECH speaker="you">Well, it's obvious.</SPEECH>
+                <SPEECH speaker="pixel" expression="serious">What do you mean it's obvious?</SPEECH>
+                <SPEECH speaker="you">You've Pixel-ated them!</SPEECH>
+                <SPEECH speaker="you">Ha ha ha.</SPEECH>
+                <SPEECH speaker="pixel" expression="unimpressed">...</SPEECH>
+                <SPEECH speaker="you">What? It's kinda funny.</SPEECH>
+                <SPEECH speaker="pixel" expression="unimpressed">...</SPEECH>
+                <SPEECH speaker="pixel" expression="unimpressed">I'm going to try and fix this before anyone finds out.</SPEECH>
+                <SPEECH speaker="pixel" expression="unimpressed">Are you gonna help or just stand there making bad puns?</SPEECH>
+                <SPEECH speaker="you">Okay okay, I'll help.</SPEECH>
+           </DIALOGUE>
+            <COMPLETE_QUEST>object-simulation-2</COMPLETE_QUEST>
+            <EXTERNAL_ACTION name="startMission">
+                <ARGUMENT>18.2</ARGUMENT>
+            </EXTERNAL_ACTION>
+        </SEQUENCE>
+    </QUEST>
+</STORY>

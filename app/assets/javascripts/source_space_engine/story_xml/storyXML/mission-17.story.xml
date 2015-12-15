@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="mission-17" type="mission" number="17" dependencies="spaceship">
+    <QUEST id="rookieTraining" helpText="Report to the classroom for your briefing.">
+        <EFFECTS>
+            <LOCATION name="yourRoom" skin="normal">
+                <SEQUENCE displayOnce="true">
+                    <NARRATION>There was a curt knock on your door. Without even waiting for a reply, Pixel burst into your room, evidently very excited over something.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="pixel" expression="excited" audience="you">Have you heard?! We did it! Our bots qualified us to be a part of the Special Cadet Force!</SPEECH>
+                        <SPEECH speaker="you" audience="pixel">Wow, that's great! I didn't expect we'd do so well!</SPEECH>
+                        <SPEECH speaker="pixel" expression="excited" audience="you">Come on! They are expecting us in class in a few minutes!</SPEECH>
+                        <SPEECH speaker="you" audience="pixel">This is so exciting! I wonder what they'll teach us at the special training session?</SPEECH>
+                        <SPEECH speaker="pixel" expression="excited" audience="you">Well, let's go and find out!</SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+            </LOCATION>
+            <LOCATION name="classroom" skin="classOn">
+                <SEQUENCE>
+                    <NARRATION>Most of the cadets have already arrived and are chattering excitedly.</NARRATION>
+                    <NARRATION>Luckily, your favourite spot is still unoccupied.</NARRATION>
+                    <DIALOGUE>
+                        <SPEECH speaker="scottie" expression="happy">So, I heard you kids exceeded all our expectations in the bot building challenge! Well done!</SPEECH>
+                        <SPEECH speaker="scottie" expression="serious">Now, we’ve had some new intel on the enemy. A while ago, our intelligence analysts have managed to trace the enemy ship’s location using the Source. It is on course towards Planet-Y, ETA is about 3 hours.</SPEECH>
+                        <SPEECH speaker="pixel" expression="horrified" audience="scottie">3 hours?! The Trebbls are still on Planet-Y! We won’t have enough time to evacuate them!</SPEECH>
+                        <SPEECH speaker="scottie" expression="serious" audience="pixel">Well, we won’t need to. You see, the reason why the Crystal Order hasn’t initiated Planetary Evac Protocols is because they didn’t want to give away the fact that we know they’re coming.</SPEECH>
+                        <SPEECH speaker="scottie" expression="serious" audience="pixel">If they did, the enemy would simply disappear off to another corner of the galaxy, and who knows if we’ll ever be able to find them again!</SPEECH>
+                        <SPEECH speaker="you" audience="scottie">So, you're using them as bait.</SPEECH>
+                        <SPEECH speaker="scottie" expression="happy" audience="you">Yes.</SPEECH>
+                        <PAUSE duration="1" autoContinue="true"></PAUSE>
+                        <SPEECH speaker="scottie" expression="happy" audience="you">It's a brilliant strategy don't you think? The enemy won't know what hit them!</SPEECH>
+                        <SPEECH speaker="you" audience="scottie">I'm not sure if that's how I would have put it, but, yea, I guess...</SPEECH>
+                        <SPEECH speaker="scottie" expression="serious">There's just one tiny set back. We’ve just confirmed that the captain of the enemy ship, was one of our Grandmasters who went rogue a few years ago.</SPEECH>
+                        <SPEECH speaker="pixel" expression="horrified" audience="scottie">What? How could the Crystal Order let something like that happen?</SPEECH>
+                        <SPEECH speaker="scottie" expression="serious" audience="pixel">We’re not really sure either. The Crystal Order’s Council kept it under tight wraps. What we do know is that he was an incredibly powerful Sourcerer, one of the order's best, with the rare ability to affect a person’s mind using the Source.</SPEECH>
+                        <SPEECH speaker="scottie" expression="serious" audience="pixel">He also commanded the most advance ship in the order - the Death Cube.</SPEECH>
+                        <SPEECH speaker="pixel" expression="horrified" audience="scottie">That’s the ship that is coming after the Trebbls and their home planet?</SPEECH>
+                        <SPEECH speaker="scottie" expression="serious" audience="pixel">Unfortunately, yes.</SPEECH>
+                        <SPEECH speaker="you" audience="scottie">But we should be able to beat them right? I mean, we have the might of the whole Crystal Order!</SPEECH>
+                        <SPEECH speaker="scottie" expression="happy">And that's where you cadets come in! Their ship is equipped with a proprietary shielding technology that renders our attacks useless.</SPEECH>
+                        <SPEECH speaker="scottie" expression="happy">But once they've arrived, our ships will have no choice but to engage them in combat. So, while they are distracted, we'll need our most skilled and resourceful cadets to infiltrate their ship and disable the shield's generator.</SPEECH>
+                        <SPEECH speaker="pixel" expression="serious" audience="you">Sounds like there's a lot riding on us.</SPEECH>
+                        <SPEECH speaker="you" audience="pixel">Yeah, we're gonna need all the training we can get.</SPEECH>
+                        <SPEECH speaker="scottie" expression="happy" audience="you">That's the spirit! I've built this nifty simulator to help make training more realistic. Let's start then. </SPEECH>
+                    </DIALOGUE>
+                </SEQUENCE>
+                <OBJECT name="scottie" skin="classroom" x="184" y="231"></OBJECT>
+                <EXTERNAL_ACTION name="startMission">
+                  <ARGUMENT>17</ARGUMENT>
+                </EXTERNAL_ACTION>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="rookieTraining-completed">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="classroom" skin="classOn"></LOCATION>
+            <DIALOGUE>
+                <SPEECH speaker="you">Hey, I'm actually getting pretty good at this!</SPEECH>
+                <SPEECH speaker="pixel" audience="you">Yeah, that was actually pretty amazing.</SPEECH>
+            </DIALOGUE>
+            <NARRATION>You feel pleased with yourself.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="scottie">Looks like you Cadets are getting a hang of it.</SPEECH>
+                <SPEECH speaker="scottie">We'll take a short break before moving on to more advanced stuff.</SPEECH>
+                <SPEECH speaker="pixel" audience="you">Great, let's go grab something to eat! Using the Source always makes me so hungry.</SPEECH>
+            </DIALOGUE>
+        </SEQUENCE>
+        <COMPLETE_QUEST>rookieTraining</COMPLETE_QUEST>
+        <COMPLETE_QUEST>rookieTraining-completed</COMPLETE_QUEST>
+    </QUEST>
+</STORY>
+           

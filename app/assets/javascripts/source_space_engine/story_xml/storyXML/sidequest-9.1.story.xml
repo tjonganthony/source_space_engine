@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STORY id="sidequest9.1" type="sidequest" number="6.1" dependencies="spaceship">
+    <QUEST id="find-sidequest9.1" helpText="">
+        <EFFECTS>
+            <LOCATION name="greatHall" skin="normal">
+                <OBJECT name="grandmastersLunching" x="???" y="???">
+                    <UNLOCK_MISSION>drill-on-cryptography</UNLOCK_MISSION>
+                    <COMPLETE_QUEST>find-sidequest9.1</COMPLETE_QUEST>
+                </OBJECT>
+            </LOCATION>
+        </EFFECTS>
+        <SEQUENCE></SEQUENCE>
+    </QUEST>
+    <QUEST id="drill-on-cryptography">
+        <EFFECTS></EFFECTS>
+        <SEQUENCE>
+            <LOCATION name="greatHall" skin="normal"></LOCATION>
+            <NARRATION>You were grabbing a quick lunch in between classes one day when you see Grandmasters Hartin and Lok-Kim seated at the table next to you.</NARRATION>
+            <NARRATION>To your surprise, they beckon you to join their table.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="lok-kim" expression="happy">Greetings Cadet! Come, sit with us!</SPEECH>
+                <SPEECH speaker="you" mode="thought">What could they possibly want with me? I haven't forgotten to submit any of my assignments have I?</SPEECH>
+                <SPEECH speaker="you" mode="thought">Or maybe it was that time I was late for class by 30 seconds...</SPEECH>
+            </DIALOGUE>
+            <NARRATION>Realising that they were still staring at you expectantly, you hastily move over to their table, not wanting to seem rude.</NARRATION>
+            <DIALOGUE>
+                <SPEECH speaker="hartin-menz" expression="happy">You have impressed us with your initiative and ability by decrypting that message today!</SPEECH>
+                <SPEECH speaker="lok-kim" expression="happy">Yes, it was most impressive, especialyl for a fresh Cadet such as yourself.</SPEECH>
+                <SPEECH speaker="hartin-menz" expression="normal">Clearly, you have a knack for the Source.</SPEECH>
+                <SPEECH speaker="you">Oh! Um, thanks!</SPEECH>
+                <SPEECH speaker="hartin-menz" expression="normal">After witnessing your performance, Lok-Kim and I have decided to assign you a special task!</SPEECH>
+                <SPEECH speaker="lok-kim" expression="serious">The message we intercepted has left us all worried. There are too many unknown factors in this, so we have to be extremely thorough.</SPEECH>
+                <SPEECH speaker="lok-kim" expression="serious">We don't know if the enemy might be employing other types of encription for their communications.</SPEECH>
+                <SPEECH speaker="lok-kim" expression="serious">As such, we would like you to study up on different encryption techniques, in case we receive more encrypted messages in the future.</SPEECH>
+                <SPEECH speaker="hartin-menz" expression="normal">It is an important task, and one which we do not assign lightly.</SPEECH>
+                <SPEECH speaker="hartin-menz" expression="normal">We will be relying on you to decrypt these messages in the future.</SPEECH>
+                <SPEECH speaker="you">I'll try my best!</SPEECH>
+            </DIALOGUE>
+            <COMPLETE_MISSION>drill-on-cryptography</COMPLETE_MISSION>
+            <EXTERNAL_ACTION name="startMission">
+                <ARGUMENT>9.1</ARGUMENT>
+            </EXTERNAL_ACTION>
+        </SEQUENCE>
+    </QUEST>
+</STORY>
